@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { FaBars, FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo.png"
-
+import cookie from "js-cookie"
 
 const Navbar = () => {
+
+
   let Links = [
     { name: "About", link: "/" },
     { name: "Events", link: "/events" },
@@ -13,6 +15,11 @@ const Navbar = () => {
   ];
 
   let [open, setOpen] = useState(false);
+  const [user,setUser]=useState("REGISTER");
+  if(cookie.get("name")&&user=="REGISTER"){
+    setUser(cookie.get("name"));
+  }
+
 
 
   return (
@@ -54,16 +61,33 @@ const Navbar = () => {
             </li>
             
           ))}
-          <Link to ="http://localhost:5000/auth/google/callback">
+          {
+            user=="REGISTER"?
+            <Link to ="http://localhost:5000/auth/google/callback">
           <li>
           <button
             className="ml-4 font-medium font-dm tracking-wider bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]
     duration-500"
           >
-            REGISTER 
+           {user}
+
           </button>
           </li>
           </Link>
+:<Link to ="/pass">
+          <li>
+          <button
+            className="ml-4 font-medium font-dm tracking-wider bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]
+    duration-500"
+          >
+           {user}
+
+          </button>
+          </li>
+          </Link>
+            
+          }
+          
         </ul>
       </div>
     </section>

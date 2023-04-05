@@ -4,6 +4,7 @@ import Home from "../src/Pages/Home";
 import Events from "../src/Pages/Events";
 import "./app.css"
 import "./events.css"
+import Pass from "../src/Pages/Pass"
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/events' element={<Events/>} />
+        <Route path='/pass' element={<Pass/>} />
       </Routes>
     </div>
   );
