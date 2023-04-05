@@ -79,12 +79,9 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
   });
 
   
-
-app.use(cors({
-    origin: ["http://localhost:3000"," https://accounts.google.com"],
-          methods: "GET,POST,PUT,DELETE",
-          credentials: true,
-  }));
+  app.use(cors({
+    origin:["http://localhost:3000","https://msit-alumni.netlify.app"," https://accounts.google.com"]
+}));
 require("./db/conn");
 const port = process.env.PORT || 5000;
 
