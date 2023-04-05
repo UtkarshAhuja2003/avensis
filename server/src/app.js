@@ -69,6 +69,13 @@ passport.serializeUser(function(user, done) {
 
 passport.use(User.createStrategy());
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Credentials', true);
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,UPDATE,OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept');
+    next();
+  });
+
 app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
     console.log(req.user.name)
