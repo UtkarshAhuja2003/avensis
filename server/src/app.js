@@ -75,12 +75,12 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
     sendVerifyMail(req.user.name, req.user.email, req.user.id);
-    res.redirect('http://localhost:3000/pass')
+    res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://msit-alumni.netlify.app"," https://accounts.google.com"]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;
