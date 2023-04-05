@@ -15,7 +15,7 @@ passport.use(
     },
     (accessToken, refreshToken, profile, done) => {
       User.findOrCreate(
-        { googleId: profile.id },
+        {username: profile.displayName, googleId: profile.id },
         { name: profile.name.givenName, email: profile.emails[0].value },
         function (err, user) {
           // res.cookie("user", profile.name.givenName);
