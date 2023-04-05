@@ -69,8 +69,8 @@ passport.serializeUser(function(user, done) {
 
 passport.use(User.createStrategy());
 
-app.get('/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
-app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
+app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+app.get('https://avensis-backend.onrender.com/auth/google/callback', passport.authenticate('google'), (req, res) => {
     console.log(req.user.name)
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
