@@ -5,6 +5,7 @@ import Events from "../src/Pages/Events";
 import "./app.css"
 import "./events.css"
 import Pass from "../src/Pages/Pass"
+<link rel="stylesheet" href="css/animate.css"/>
 
 
 const App = () => {

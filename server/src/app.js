@@ -65,6 +65,9 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 require("./models/user");
+require("./models/form");
+
+app.use(require("./routes/form"));
 
 
 app.listen(port, '0.0.0.0', ()=>{

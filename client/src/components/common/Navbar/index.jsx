@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaBars, FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo.png"
+import Logo from "../../../Images/logo_tri.png"
 import cookie from "js-cookie"
+import wow from "wowjs"
 
 const Navbar = () => {
 
@@ -23,14 +24,20 @@ const Navbar = () => {
 
 
   return (
-    <section className=" w-full top-0 left-0 flex justify-between px-20  bg-theme py-4 ">
-      <div className="cursor-pointer">
+    <section className="wow w-full top-0 left-0 flex justify-between px-20  bg-theme py-4 ">
+      <div className="cursor-pointer flex">
           <Link to ="/">
+          <div  className="flex">
           <img
-            className="w-[170px] md:w-[180px] xl:w-[250px] h-auto"
+            className="w-[65px] md:w-[80px] xl:w-[80px] h-[55px] md:h-[70px]"
             src={Logo}
             alt="Logo"
           />
+          <div className="ml-1 md:ml-4">
+            <h4 className="font-[ultra] text-xl md:text-[35px] font-[100] tracking-widest md:tracking-[9px] py-0 leading-5 md:leading-10 mt-3 md:mt-1">AVENSIS</h4>
+            <p className=" pt-0 mt-0 tracking-wider md:tracking-widest text-[9px] md:text-sm font-[600]">Inspire | Initiate | Innovate</p>
+          </div>
+          </div>
           </Link>
         </div>
       <div className="md:flex justify-around   ">
@@ -39,7 +46,7 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
           className="text-3xl text-white absolute top-6 cursor-pointer md:hidden"
         >
-          <FaBars name={open ? "close" : "menu"}></FaBars>
+          <FaBars className="text-[20px] ml-12 mt-1" name={open ? "close" : "menu"}></FaBars>
         </div>
 
         <ul

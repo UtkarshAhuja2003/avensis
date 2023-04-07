@@ -4,6 +4,8 @@ import tanay from '../../../Images/team/Tanay.png'
 import arjyo from '../../../Images/team/Arjyo.jpeg'
 import amar from '../../../Images/team/amar_pro.jpg'
 import faiz from '../../../Images/team/faiz.jpeg'
+import { FiMail } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const [count, setCount] = useState(0);
@@ -19,35 +21,48 @@ const Footer = () => {
     <div id="footer">
         {/* <img class="footerimg absolute z-[-1]" src="Images/footer-back.png" /> */}
         <div class="contacts">
-            <div class="contact1">
-            <h1>CONTACT US</h1>
-            <h4>MSIT C-4, JANAKPURI DELHI-110058</h4><br/><br/>
-            </div>
-            <div class="vl"></div>
-            <div class="contact2">
-                <span class="contactname">Pardeep Sangwan</span><span class="contactcoma"> , </span><span class="contactposition"> Chief Advisor</span>
-                <h4>+91 99990 26516</h4><br/>    
-                <span class="contactname">Tanay Aggarwal</span><span class="contactcoma"> , </span><span class="contactposition">Chief Organizer</span>
-                <h4>+91 83768 93416</h4><br/>
-                <span class="contactname">Shlok Rana</span><span class="contactcoma"> , </span><span class="contactposition">Chief Organizer</span>
-                <h4>+91 96435 66916</h4><br/>
+            <div class="contact2 w-[80%] md:flex justify-between mb-12">
+                <div>
+                  <span class="contactname">Pardeep Sangwan</span><span class="contactcoma"><br/> </span><span>Convener </span><br/>
+                  <span>+91 99990 26516 </span></div>
+                <div>
+                  <span class="contactname">Tanay Aggarwal</span><span class="contactcoma"><br/> </span><span >Chief Organizer </span><br/>
+                  <span>+91 83768 93416</span>  
+                </div>
+                <div>
+                  <span class="contactname">Shlok Rana</span><span class="contactcoma"><br/> </span><span>Chief Organizer </span><br/>
+                  <span>+91 96435 66916</span> 
+                </div>
             </div>
         </div>
         <div className='w-[80%] mb-3 mx-auto h-[1px] bg-[#EBB22D]'></div>
-        <div class="content">
-            <div class="follow">
-                <div class="follow1">
-                    <h4>FOLLOW US ON</h4>
-                   
-                        <a href="https://www.instagram.com/iic.msit/"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/company/iic-msit/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                </div>
-                <div class="follow2 mb-4">
-                    <h4>Coded with ❤ by <button onClick={displayTeam} className='text-[#EBB22D] font-bold text-[14px]'>Tech Team, Avensis</button></h4>
-                </div>
-            </div>
+        {/* <div className=' ml-4 grid grid-cols-1   md:grid-cols-4 '> */}
+                <div class="   md:pl-32 flex">
+                <div className='flex  '>
+                  <div classNAME=''>
+                    <h4>FOLLOW US </h4>
+                  </div>
+                  <div className=' py-1 ml-2   '>
+                    <a  href='https://www.instagram.com/avensis_2023/'> <FaInstagram className='fa-brands fa-instagram '></FaInstagram></a>
+                  </div>
 
-        </div>
+        
+                <div className='py-2 md:py-0 flex  '>
+                <FiMail className='mt-1'></FiMail>              
+                <a className='ml-2 pb-[2px] ' href="mailto:avensis2023@msit.in">avensis2023@msit.in</a>
+              </div>
+
+
+              <div className='  flex items-center '>
+               <h4> MSIT C-4 JANAKPURI </h4>
+              </div>
+
+                <div class="follow2 mb-4 flex ">
+                   <h4 className="w-[50%]">Coded with ❤ by <button onClick={displayTeam} className=   '   w-[50%] text-[#EBB22D] font-bold text-[14px]'>Tech Team, Avensis</button></h4>
+                </div>
+                </div>
+            {/* </div> */}
+
         
 
         {count==1 &&

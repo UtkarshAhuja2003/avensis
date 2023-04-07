@@ -33,6 +33,7 @@ h6{
 }
 body{
     width: 100%;
+    background-color: #171221;
 }
 
 
@@ -122,8 +123,6 @@ body{
         border-radius: 100px;
         border-width: 0px;
         cursor: pointer;
-        margin-top: 45px;
-        margin-left: 75px;
         z-index: 9999;
         }
             .subscribe0:hover{
@@ -279,18 +278,28 @@ body{
 }
 #head h2{
    font-family: 'Ultra';
-   font-weight: 100;
+   font-weight: 90;
    text-align: center;
-   font-size: 55px;
+   font-size: 45px;
    letter-spacing: 5px;
-   line-height: 80px;
+   line-height: 70px;
+   /* letter-spacing: 5px; */
+}
 
+#head h1{
+    font-family: 'Ultra';
+    font-weight: 100;
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    /* letter-spacing: 10px; */
 }
 #head p{
     padding-top: 1.6%;
     text-align: center;
     font-family: 'Roboto';
-    width: 55%;
+    width: 80%;
      margin: auto;
      font-family: Roboto;
      font-size: 21px;
@@ -1033,9 +1042,6 @@ hr{
      border: none;
    
  }
- .follow1{
-     width: 17%;
- }
  i{
      color: white;
  }
@@ -1089,7 +1095,7 @@ hr{
       letter-spacing: 3px;
   }
   /* .contact2{
-  
+  display-flex;
   } */
   .contactname{
     color: #ecb227;
@@ -1200,10 +1206,18 @@ hr{
         margin-top: 40px;
     }
     #head h2{
+        font-weight: 90;
+        font-size: 17px;
+        letter-spacing: 2px;
+        line-height: 30px;
+     
+     }
+
+     #head h1{
         font-weight: 100;
         font-size: 30px;
         letter-spacing: 5px;
-        line-height: 40px;
+        line-height: 45px;
      
      }
      #head p{

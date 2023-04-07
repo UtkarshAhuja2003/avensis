@@ -33,43 +33,43 @@ const index = () => {
 
     const sponsors = [
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         },
         {
-            "name": "Official Gaming Partner",
+            "name": "COMING SOON",
             "image": image3
         }    
     ];
