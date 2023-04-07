@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import image from '../../../Images/dropline-removebg-preview.png'
+import response from '../../../Images/response.png'
 
 const Index = () => {
 
@@ -37,7 +38,7 @@ const Index = () => {
     <div className="bg-[#171221] py-[5%] mx-full mt-12">
         <div className="md:flex justify-between mx-[10%] md:mx-[13%]">
             <div className="">
-                <p className='text-white font-[ultra] text-4xl tracking-widest'> DROP US A LINE</p>
+                <p className='text-white font-[ultra] ml-2 text-2xl md:text-4xl tracking-widest'> DROP US A LINE</p>
                 {register==0 &&
                     <form method='POST'>
                     <input type="string"
@@ -67,7 +68,11 @@ const Index = () => {
 
                 {
                 register==1 && 
-                <p>Hello</p>
+                <div>
+                    <img src={response} className='w-48 md:w-[230px] mt-12 md:mt-24 mx-auto' alt="" />
+                    <p className='text-white font-[roboto] text-center mt-12 text-grey-200 text-2xl tracking-widest'>Thank You!! for your response</p>
+                </div>
+                
                 }
                 
                 

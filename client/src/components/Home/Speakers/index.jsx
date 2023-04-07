@@ -1,7 +1,7 @@
 import React from 'react'
 import SpeakerCard from './SpeakerCard'
 import SponsorCard from './SponsorCard'
-import image from '../../../Images/Speakers/speaker1.png'
+import image from '../../../Images/speech.png'
 import Sphere1 from '../../../Images/Sphere-Black-Matte1(1).png' 
 import DecorativeLine from '../../../Images/DecorativeLine.png'
 import image2 from '../../../Images/Workshops/workshop1.png'
@@ -99,9 +99,8 @@ const index = () => {
             <h1 className='text-[#EBB22D] mt-4'>SPONSOR?</h1>
             <div className='flex justify-between w-[70%] md:w-[33%] mt-8 mx-auto'>
                 <button className='w-[122px] md:w-[172px] font-[roboto] text-white text-lg md:text-xl py-[12px] rounded-full bg-gradient-to-r from-[#771EBD] to-[#BF17C3]'>REGISTER</button>
-                <button className='w-[120px] md:w-[170px] font-[roboto] text-white text-lg md:text-xl py-[10px] rounded-full border-[2px] border-white'>CONTACT</button>
-            </div>
-
+                <a href="#footer"><button className='w-[120px] md:w-[170px] font-[roboto] text-white text-lg md:text-xl py-[10px] rounded-full border-[2px] border-white'>CONTACT</button></a>
+        </div>
         </div>
         <div className='w-full mt-12'>
             <p className='text-white font-[ultra] text-4xl tracking-widest ml-4'> SPEAKERS</p>
@@ -120,7 +119,7 @@ const index = () => {
             </div>
         </div>
         <div>
-            <p className='text-white font-[ultra] text-4xl tracking-widest my-12 ml-4'> WORKSHOPS</p>
+            <p className='text-white font-[ultra] text-3xl md:text-4xl tracking-widest my-12 ml-4'> COMPETITIONS</p>
             <div className='mx-auto'>
                 <div className='md:ml-[10%] md:mt-12'>
                 <div className='md:flex'>

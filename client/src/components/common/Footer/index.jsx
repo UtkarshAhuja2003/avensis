@@ -18,16 +18,19 @@ const Footer = () => {
     setCount(0);
   }
   return (
-    <div id="footer">
-        {/* <img class="footerimg absolute z-[-1]" src="Images/footer-back.png" /> */}
-        <div class="contacts">
+    <div id="footer"  className='m-0 bg-[url(https://i.ibb.co/vhQq6hM/footer-back.png)] '>
+      <div className='pb-8'>
+
+      
+        <div className="contacts m-0">
             <div class="contact2 w-[80%] md:flex justify-between mb-12">
-                <div>
-                  <span class="contactname">Pardeep Sangwan</span><span class="contactcoma"><br/> </span><span>Convener </span><br/>
+                <div className=''>
+                  <span className="contactname  ">
+                  Pardeep Sangwan</span><span class="contactcoma"><br/> </span><span>Convener </span><br/>
                   <span>+91 99990 26516 </span></div>
                 <div>
                   <span class="contactname">Tanay Aggarwal</span><span class="contactcoma"><br/> </span><span >Chief Organizer </span><br/>
-                  <span>+91 83768 93416</span>  
+                <span>+91 83768 93416</span>  
                 </div>
                 <div>
                   <span class="contactname">Shlok Rana</span><span class="contactcoma"><br/> </span><span>Chief Organizer </span><br/>
@@ -35,33 +38,44 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
+
         <div className='w-[80%] mb-3 mx-auto h-[1px] bg-[#EBB22D]'></div>
-        {/* <div className=' ml-4 grid grid-cols-1   md:grid-cols-4 '> */}
-                <div class="   md:pl-32 flex">
-                <div className='flex  '>
-                  <div classNAME=''>
+
+
+
+        {/* <div className='grid grid-cols-1 md:grid-cols-4 ml-4 '> */}
+        <div class="flex-wrap md:flex m-0 w-[80%] md:w-[90%] mx-auto md:ml-0">
+          <div className='flex '>
+             <div className='md:ml-[140px] text-[13px] mt-[2px] md:text-sm  flex'>
+
+              {/* follow */}
+
+                <div className=' flex  '>
                     <h4>FOLLOW US </h4>
                   </div>
-                  <div className=' py-1 ml-2   '>
-                    <a  href='https://www.instagram.com/avensis_2023/'> <FaInstagram className='fa-brands fa-instagram '></FaInstagram></a>
-                  </div>
+                    <div className='py-1 '>
+                    <a  href='https://www.instagram.com/avensis_2023/'> <FaInstagram className='fa-brands fa-instagram fa-2 ml-2'></FaInstagram></a> </div>
+                     </div>
 
-        
-                <div className='py-2 md:py-0 flex  '>
-                <FiMail className='mt-1'></FiMail>              
-                <a className='ml-2 pb-[2px] ' href="mailto:avensis2023@msit.in">avensis2023@msit.in</a>
+
+                     {/* mail */}
+               <div className='flex ml-4'>
+              <FiMail className='mt-1 '></FiMail>              
+              <a className=' ml-1' href="mailto:avensis2023@msit.in">avensis2023@msit.in</a>
+            </div> 
+            </div>
+
+
+              <div className='md:ml-32 ml-4 '>
+               <h4> MSIT C-4 JANAKPURI, Delhi 110058 </h4>
               </div>
 
-
-              <div className='  flex items-center '>
-               <h4> MSIT C-4 JANAKPURI </h4>
-              </div>
-
-                <div class="follow2 mb-4 flex ">
-                   <h4 className="w-[50%]">Coded with ❤ by <button onClick={displayTeam} className=   '   w-[50%] text-[#EBB22D] font-bold text-[14px]'>Tech Team, Avensis</button></h4>
+                <div class="follow2  mb-4 flex ">
+                   <h4 className="md:ml-[125px] text-[12px] md:text-sm ">Coded with ❤ by <button onClick={displayTeam} className=   'text-[#EBB22D] font-bold text-[13px]'>Tech Team, Avensis</button></h4>
                 </div>
-                </div>
-            {/* </div> */}
+            </div>
+          
 
         
 
@@ -134,7 +148,7 @@ const Footer = () => {
 
 
 
-
+             </div>
       
     </div>
   )

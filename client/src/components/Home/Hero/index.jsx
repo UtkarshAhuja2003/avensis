@@ -11,9 +11,9 @@ const index = () => {
         <div id="ABout">
             <div class="ABout1">
                 <span>A B O U T</span><br/>
-                <div class="aboutline"></div>
-                <p className='text-sm leading-4 md:leading-12'>
-                AVENSIS is organized by the faculty and the student body of MSIT serves as a perfect launch-pad for technology enthusiasts to showcase their intelligence and inventiveness and is a massive platform for various activities, organized in the form of competitive events, guest lectures, technical workshops, and exhibition to develop and showcase their technical prowess.</p>
+                <div class="w-[0px] aboutline"></div>
+                <p className='leading-[15px] text-[10px] md:text-[15px] md:leading-[30px]'>
+                AVENSIS, organized by MSIT's faculty and student body, provides a launch-pad for technology enthusiasts to showcase their inventiveness through competitive events, guest lectures, workshops, and exhibitions.</p>
                 <a href="https://youtu.be/dQw4w9WgXcQ"><button class="subscribe0 mt-6 ml-12">WATCH TEASER</button></a>
             </div>
             <div class="stats">
