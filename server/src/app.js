@@ -92,13 +92,13 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
-    res.redirect('http://140.238.230.33:3002/pass')
+    res.redirect('https://avensis.onrender.com/pass')
     // res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002"]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;
