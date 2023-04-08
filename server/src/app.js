@@ -78,8 +78,12 @@ app.use((req, res, next) => {
 app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
     console.log(req.user.name)
-    res.cookie("name", req.user.name);
-    res.cookie("email", req.user.email);
+    res.cookie("name", req.user.name,{
+      httpOnly:true
+    });
+    res.cookie("email", req.user.email,{
+      httpOnly:true
+    });
     // sendVerifyMail(req.user.name, req.user.email, req.user.id);
     res.redirect('https://avensismsit.netlify.app/pass')
   });
