@@ -46,7 +46,7 @@ const index = () => {
             <div id="Headtitle">
            
                 <h1  className={`${css(styles.fadeInLeftBig)}`}>MULTIVERSAL ESCAPADE</h1>
-                <h2 class={`${css(styles.fadeInRightBig)}`}>ticket to a new reality</h2>
+                <h2 class={`${css(styles.fadeInRightBig)}`}>"ticket to a new reality" </h2>
                 <p class={`${css(styles.flash)}`}>Step into the next dimension at AVENSIS - The Annual Technical Fest of MSIT </p>
             </div>
             <img src={image2} className="shape2"/>

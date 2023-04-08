@@ -6,6 +6,7 @@ import amar from '../../../Images/team/amar_pro.jpg'
 import faiz from '../../../Images/team/faiz.jpeg'
 import { FiMail } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
+import { FaFirefoxBrowser } from "react-icons/fa";
 
 const Footer = () => {
   const [count, setCount] = useState(0);
@@ -90,7 +91,7 @@ const Footer = () => {
                           <a href="https://www.tanayaggarwal.com" target="_blank"><img src={tanay}
                               alt="Tech head - Tanay " className='rounded-[50%]'/></a>
                           <h4 className='text-[18px] text-black font-semibold'>Tanay Aggarwal</h4>
-                          <h5 className='text-[14px] text-black'>Tech Head</h5>
+                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500 '>Linkedin</h5>
                         </center>
                       </div>
                       <div class="col-md-6">
@@ -99,7 +100,7 @@ const Footer = () => {
                                 src={faiz} alt="Frontend - Faiz " height="150px" width="150px"
                                 className='rounded-[50%]'/></a>
                             <h4 className='text-[18px] text-black font-semibold'>Faiz Alam</h4>
-                            <h5  className='text-[14px] text-black'>Frontend Developer</h5>
+                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
                           </center>
                         </div>
                       <div class="col-md-6">
@@ -108,7 +109,7 @@ const Footer = () => {
                               src={amar} alt="Backend - Aman " height="150px" width="150px"
                               className='rounded-[50%]'/></a>
                           <h4 className='text-[18px] text-black font-semibold'>Utkarsh Ahuja</h4>
-                          <h5  className='text-[14px] text-black '>Frontend Developer</h5>
+                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5>
                         </center>
                       </div>
                       <div class="col-md-6">
@@ -117,7 +118,7 @@ const Footer = () => {
                                 src={amar} alt="Backend - Aman " height="150px" width="150px"
                                 className='rounded-[50%]'/></a>
                             <h4 className='text-[18px] text-black font-semibold'>Mohd Kaif</h4>
-                            <h5  className='text-[14px] text-black '>Frontend Developer</h5>
+                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
                           </center>
                         </div>
                         <div class="col-md-6">
@@ -126,7 +127,7 @@ const Footer = () => {
                                 src={amar} alt="Backend - Aman " height="150px" width="150px"
                                 className='rounded-[50%]'/></a>
                             <h4  className='text-[18px] text-black font-semibold'>Aman Sinha</h4>
-                            <h5  className='text-[14px] text-black '>Backend Developer</h5>
+                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
                           </center>
                         </div>
                       <div class="col-md-6">
@@ -135,7 +136,7 @@ const Footer = () => {
                               src={arjyo} alt="Frontend - Arjyo " height="150px" width="150px"
                               className='rounded-[50%]'/></a>
                           <h4  className='text-[18px] text-black font-semibold'>Arjyo Chakraborty</h4>
-                          <h5  className='text-[14px] text-black '>Frontend Developer</h5>
+                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
                         </center>
                       </div>
                       

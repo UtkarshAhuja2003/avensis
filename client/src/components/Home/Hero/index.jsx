@@ -10,9 +10,9 @@ const index = () => {
         <img class="vector5" src={image2}/>
         <div id="ABout">
             <div class="ABout1">
-                <span>A B O U T</span><br/>
+                <span >A B O U T</span><br/>
                 <div class="w-[0px] aboutline"></div>
-                <p className='leading-[15px] text-[10px] md:text-[15px] md:leading-[30px]'>
+                <p className='leading-[15px] text-[10px] md:text-[15px] md:leading-[30px]   '>
                 AVENSIS, organized by MSIT's faculty and student body, provides a launch-pad for technology enthusiasts to showcase their inventiveness through competitive events, guest lectures, workshops, and exhibitions.</p>
                 <a href="https://youtu.be/dQw4w9WgXcQ"><button class="subscribe0 mt-6 ml-12">WATCH TEASER</button></a>
             </div>
