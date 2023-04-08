@@ -16,9 +16,9 @@ const Navbar = () => {
 
   let [open, setOpen] = useState(false);
   const [user,setUser]=useState("REGISTER");
-  if(cookie.get("name",{ domain: 'https://avensis-backend.onrender.com'})&&user=="REGISTER"){
+  if(cookie.get("name",{ domain: 'avensismsit.netlify.app'})&&user=="REGISTER"){
     console.log(user)
-    setUser(cookie.get("name",{ domain: 'https://avensis-backend.onrender.com'}));
+    setUser(cookie.get("name",{ domain: 'avensismsit.netlify.app'}));
   }
 
 
