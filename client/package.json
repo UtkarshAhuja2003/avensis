@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://avensis-backend.onrender.com",
+  "proxy": "http://140.238.230.33:3001",
   "dependencies": {
     "@hcorta/react-to-image": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",

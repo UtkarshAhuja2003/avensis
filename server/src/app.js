@@ -8,7 +8,7 @@ const cookieParser=require("cookie-parser")
 const session=require("express-session");
 const User = require("./models/user");
 const nodemailer=require("nodemailer")
-
+ 
 
 // const sendVerifyMail = async (name, email, user_id) => {
 //     try {
@@ -75,30 +75,30 @@ app.use((req, res, next) => {
     next();
   });
 
-app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+app.get('http://140.238.230.33:3001/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+// app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-    console.log(req.user.name)
-    res.cookie("name", req.user.name,{
-      httpOnly:true,
-      path: "https://avensismsit.netlify.app",
-      sameSite:"none",
-      expires: new Date(Date.now() + 900000),
-      secure: true
-    });
-    res.cookie("email", req.user.email,{
-      httpOnly:true,
-      path: "https://avensismsit.netlify.app/",
-      sameSite:"none",
-      expires: new Date(Date.now() + 900000),
-      secure: true
-    });
+  // store.set("name",req.user.name)
+  // console.log(store('name'))
+//   localStorage.setItem('name', req.user.name);
+// console.log(localStorage.getItem('name'));
+// localStorage.setItem('email', req.user.email);
+    // console.log(req.user.name)
+    // window.localStorage.setItem('name', req.user.name);
+    // console.log(localStorage.getItem('name'));
+    // window.localStorage.setItem('email', req.user.email);
+    
     // sendVerifyMail(req.user.name, req.user.email, req.user.id);
-    res.redirect('https://avensismsit.netlify.app/pass')
+    
+    res.cookie("name", req.user.name);
+    res.cookie("email", req.user.email);
+    res.redirect('http://140.238.230.33:3002/pass')
+    // res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com",""]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;

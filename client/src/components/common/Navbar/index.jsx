@@ -16,9 +16,9 @@ const Navbar = () => {
 
   let [open, setOpen] = useState(false);
   const [user,setUser]=useState("REGISTER");
-  if(cookie.get("name",{ domain: 'avensis-backend.onrender.com'})&&user=="REGISTER"){
+  if(cookie.get("name",{ domain: ''})&&user=="REGISTER"){
     console.log(user)
-    setUser(cookie.get("name",{ domain: 'avensis-backend.onrender.com'}));
+    setUser(cookie.get("name",{ domain: ''}));
   }
 
 
@@ -70,7 +70,8 @@ const Navbar = () => {
           ))}
           {
             user=="REGISTER"?
-            <Link to ="https://avensis-backend.onrender.com/auth/google/callback">
+            <Link to ="http://140.238.230.33:3001/auth/google/callback">
+            {/* <Link to ="https://avensis-backend.onrender.com/auth/google/callback"> */}
           <li>
           <button
             className="ml-4 font-medium font-dm tracking-wider bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]

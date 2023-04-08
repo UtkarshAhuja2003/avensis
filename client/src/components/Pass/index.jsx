@@ -9,8 +9,8 @@ const Index = () => {
   const { ref, isLoading, getPng ,dataURL} = useToImage()
   const [downloadURL, setDownloadURL] = useState(null);
   var name,email;
-    name=cookie.get("name",{ domain: 'avensismsit.netlify.app'});
-    email=cookie.get("email",{ domain: 'avensismsit.netlify.app'});
+    name=cookie.get("name",{ domain: ''});
+    email=cookie.get("email",{ domain: ''});
   function display()
   {
     return <div className='ml-[42%] pt-28 font-source'>
