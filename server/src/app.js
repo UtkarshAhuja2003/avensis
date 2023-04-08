@@ -80,12 +80,16 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     console.log(req.user.name)
     res.cookie("name", req.user.name,{
       httpOnly:true,
+      path: "https://avensismsit.netlify.app",
       sameSite:"none",
+      expires: new Date(Date.now() + 900000),
       secure: true
     });
     res.cookie("email", req.user.email,{
       httpOnly:true,
+      path: "https://avensismsit.netlify.app/",
       sameSite:"none",
+      expires: new Date(Date.now() + 900000),
       secure: true
     });
     // sendVerifyMail(req.user.name, req.user.email, req.user.id);

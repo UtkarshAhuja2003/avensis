@@ -6,7 +6,7 @@ const Index = (data) => {
   const styles = StyleSheet.create({
     zoomIn: {
       animationName: zoomIn,
-      animationDuration: '4s',
+      animationDuration: '3s',
     },
   });
 
