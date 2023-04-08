@@ -75,8 +75,8 @@ app.use((req, res, next) => {
     next();
   });
 
-app.get('http://140.238.230.33:3001/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
-// app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+// app.get('http://140.238.230.33:3001/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
   // store.set("name",req.user.name)
   // console.log(store('name'))
