@@ -92,7 +92,7 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
-    res.redirect('https://avensis.onrender.com/pass')
+    res.redirect('https://avensis.onrender.com/')
     // res.redirect('https://avensismsit.netlify.app/pass')
   });
 
