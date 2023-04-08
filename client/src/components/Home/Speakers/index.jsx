@@ -12,21 +12,21 @@ import shape3 from '../../../Images/shape3.png'
 const index = () => {
     const speakers = [
         {
-            "name": "Elon Musk",
-            "designation": "NFT enthusiast",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "name": "COMING SOON",
+            "designation": "",
+            "desc": "",
             "image": image
         },
         {
-            "name": "Elon Musk",
-            "designation": "NFT enthusiast",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "name": "COMING SOON",
+            "designation": "",
+            "desc": "",
             "image": image
         },
         {
-            "name": "Elon Musk",
-            "designation": "NFT enthusiast",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "name": "COMING SOON",
+            "designation": "",
+            "desc": "",
             "image": image
         }
     ];
@@ -126,16 +126,16 @@ const index = () => {
                     <div className='bg-[#1D1332] flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
                         <img className='w-[120px]' src={image2} alt="" />
                         <div className='text-white pl-3 font-[roboto]'>
-                            <h1 className='text-xl md:text-2xl font-bold'>Digital Marketing</h1>
-                            <h1 className='text-sm text-[#EBB22D] mt-6'>Rs 799/-</h1>
+                            <h1 className='text-xl md:text-2xl font-bold'>The Conquerors </h1>
+                            <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1000/-</h1>
                             <h1 className='text-sm'>11:00am, April 28th</h1>
                         </div>
                     </div>
                     <div className='bg-[#1D1332] mt-6 md:mt-0 flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
                         <img src={image2} alt="" />
                         <div className='text-white pl-3 font-[roboto]'>
-                            <h1 className='text-2xl font-bold'>Digital Marketing</h1>
-                            <h1 className='text-sm text-[#EBB22D] mt-6'>Rs 799/-</h1>
+                            <h1 className='text-2xl font-bold'>Pick up the thread</h1>
+                            <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
                             <h1 className='text-sm'>11:00am, April 28th</h1>
                         </div>
                     </div>
@@ -147,16 +147,16 @@ const index = () => {
                         <div className='bg-[#1D1332] flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
                             <img src={image2} alt="" />
                             <div className='text-white pl-3 font-[roboto]'>
-                                <h1 className='text-2xl font-bold'>Digital Marketing</h1>
-                                <h1 className='text-sm text-[#EBB22D] mt-6'>Rs 799/-</h1>
+                                <h1 className='text-2xl font-bold'>Sike the Psych</h1>
+                                <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
                                 <h1 className='text-sm'>11:00am, April 28th</h1>
                             </div>
                         </div>
                         <div className=' mt-6 md:mt-0 bg-[#1D1332] flex rounded-lg  p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
                             <img src={image2} alt="" />
                             <div className='text-white pl-3 font-[roboto]'>
-                                <h1 className='text-2xl font-bold'>Digital Marketing</h1>
-                                <h1 className='text-sm text-[#EBB22D] mt-6'>Rs 799/-</h1>
+                                <h1 className='text-2xl font-bold'>COMING SOON</h1>
+                                <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
                                 <h1 className='text-sm'>11:00am, April 28th</h1>
                             </div>
                         </div>

@@ -2,13 +2,14 @@ const mongoose=require("mongoose")
 const validator = require("validator")
 const passportLocalMongoose=require("passport-local-mongoose");
 const findOrCreate=require("mongoose-findorcreate");
-
+const shortid=require("shortid");
 
 
 
 const userSchema = new mongoose.Schema({
     username:{
-        type:String
+        type:String,
+        default:shortid.generate
     },
     name:{
         type:String
@@ -21,8 +22,6 @@ const userSchema = new mongoose.Schema({
     googleId:String
     
 })
-
-
 
 userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(findOrCreate);

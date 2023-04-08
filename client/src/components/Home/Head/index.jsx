@@ -3,6 +3,7 @@ import image1 from '../../../Images/shape3.png'
 import image2 from '../../../Images/shape2.png'
 import image3 from '../../../Images/shape6.png'
 import './../../../style.css';
+import {Link} from "react-router-dom"
 // import { bounce } from 'react-animations';
 import { fadeInLeftBig ,fadeInRightBig ,tada ,flash } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
@@ -52,9 +53,9 @@ const index = () => {
             <img src={image2} className="shape2"/>
         </div>
         <div className="buttons">
-            <a href='#mainevent'><button className= {`subscribe2 ${css(styles.tada)}`}  >GET STARTED</button></a> 
+        <Link to ="https://avensis-backend.onrender.com/auth/google/callback"><button className= {`subscribe2 ${css(styles.tada)}`}  >GET PASS</button></Link>
             <div className='w-[40px]'></div>
-            <a href="events.html"><button className= {`subscribe3 ${css(styles.tada)}`} >EXPLORE</button></a> 
+            <Link to="/events"><button className= {`subscribe3 ${css(styles.tada)}`} >EXPLORE</button></Link>
         </div>
         <img src={image3} id="shape5"/>
         </section>

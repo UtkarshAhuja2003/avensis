@@ -10,36 +10,36 @@ const User = require("./models/user");
 const nodemailer=require("nodemailer")
 
 
-const sendVerifyMail = async (name, email, user_id) => {
-    try {
-      const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
-        requireTLS: true,
-        auth: {
-          user: "avensis2023@msit.in",
-          pass: "avensis123"
-        }
-      });
-      const mailOptions = {
-        from: "avensis2023@msit.in",
-        to: email,
-        subject: "for verification mail",
-        html: ' <p> Hii '+ name +  `<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/pwBCWWK/Untitled.png" alt="Untitled" border="0"></a><br /><a target='_blank' href='https://emoticoncentral.com/category/exhaust'>exhaust emojis</a><br />"></img> </p>`
-      }
-      transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-          console.log(error);
-        }
-        else {
-          console.log("email sent :", info.response);
-        }
-      })
-    } catch (error) {
-      console.log(error.message)
-    }
-}
+// const sendVerifyMail = async (name, email, user_id) => {
+//     try {
+//       const transporter = nodemailer.createTransport({
+//         host: "smtp.gmail.com",
+//         port: 587,
+//         secure: false,
+//         requireTLS: true,
+//         auth: {
+//           user: "avensis2023@msit.in",
+//           pass: "avensis123"
+//         }
+//       });
+//       const mailOptions = {
+//         from: "avensis2023@msit.in",
+//         to: email,
+//         subject: "for verification mail",
+//         html: ' <p> Hii '+ name +  `<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/pwBCWWK/Untitled.png" alt="Untitled" border="0"></a><br /><a target='_blank' href='https://emoticoncentral.com/category/exhaust'>exhaust emojis</a><br />"></img> </p>`
+//       }
+//       transporter.sendMail(mailOptions, function (error, info) {
+//         if (error) {
+//           console.log(error);
+//         }
+//         else {
+//           console.log("email sent :", info.response);
+//         }
+//       })
+//     } catch (error) {
+//       console.log(error.message)
+//     }
+// }
 
 app.use(cookieParser());
 app.use(session({
@@ -75,18 +75,18 @@ app.use((req, res, next) => {
     next();
   });
 
-app.get('/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+app.get('https://avensis-backend.onrender.com/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
     console.log(req.user.name)
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
-    sendVerifyMail(req.user.name, req.user.email, req.user.id);
+    // sendVerifyMail(req.user.name, req.user.email, req.user.id);
     res.redirect('http://localhost:3000/pass')
   });
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com"]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com",""]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;

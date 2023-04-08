@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import image from "../../../Images/footer-back.png"
 import tanay from '../../../Images/team/Tanay.png'
-import arjyo from '../../../Images/team/Arjyo.jpeg'
-import amar from '../../../Images/team/amar_pro.jpg'
-import faiz from '../../../Images/team/faiz.jpeg'
+import utkarsh from '../../../Images/team/utkarsh.png'
+import uday from '../../../Images/team/uday.jpeg'
+import kaif from '../../../Images/team/kaif.jpeg'
+import yash from '../../../Images/team/yash.jpeg'
 import { FiMail } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaFirefoxBrowser } from "react-icons/fa";
@@ -91,52 +92,44 @@ const Footer = () => {
                           <a href="https://www.tanayaggarwal.com" target="_blank"><img src={tanay}
                               alt="Tech head - Tanay " className='rounded-[50%]'/></a>
                           <h4 className='text-[18px] text-black font-semibold'>Tanay Aggarwal</h4>
-                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500 '>Linkedin</h5>
+                          <a href="https://www.tanayaggarwal.com"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
                         </center>
                       </div>
                       <div class="col-md-6">
-                          <center>
-                            <a href="https://www.linkedin.com/in/faiz-a-0b7229b0/" target="_blank"><img
-                                src={faiz} alt="Frontend - Faiz " height="150px" width="150px"
-                                className='rounded-[50%]'/></a>
-                            <h4 className='text-[18px] text-black font-semibold'>Faiz Alam</h4>
-                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
-                          </center>
-                        </div>
-                      <div class="col-md-6">
                         <center>
-                          <a href="https://www.linkedin.com/in/utkarsh-ahuja-44aa90227" target="_blank"><img
-                              src={amar} alt="Backend - Aman " height="150px" width="150px"
+                          <a href="https://linktr.ee/ahuja_utkarsh" target="_blank"><img
+                              src={utkarsh} alt="Backend - Aman " height="150px" width="150px"
                               className='rounded-[50%]'/></a>
                           <h4 className='text-[18px] text-black font-semibold'>Utkarsh Ahuja</h4>
-                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5>
+                          <a href="https://linktr.ee/ahuja_utkarsh"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
+                          
                         </center>
                       </div>
                       <div class="col-md-6">
                           <center>
                             <a href="https://www.linkedin.com/in/mohd-kaif-7ba250228" target="_blank"><img
-                                src={amar} alt="Backend - Aman " height="150px" width="150px"
+                                src={kaif} alt="Backend - Aman " height="150px" width="150px"
                                 className='rounded-[50%]'/></a>
                             <h4 className='text-[18px] text-black font-semibold'>Mohd Kaif</h4>
-                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
+                            <a href="https://www.linkedin.com/in/mohd-kaif-7ba250228"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
                           </center>
                         </div>
                         <div class="col-md-6">
                           <center>
-                            <a href="https://www.linkedin.com/in/web-advisor/" target="_blank"><img
-                                src={amar} alt="Backend - Aman " height="150px" width="150px"
+                            <a href="https://linktr.ee/uday_sangwan" target="_blank"><img
+                                src={uday} alt="Backend - Aman " height="150px" width="150px"
                                 className='rounded-[50%]'/></a>
-                            <h4  className='text-[18px] text-black font-semibold'>Aman Sinha</h4>
-                            <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
+                            <h4  className='text-[18px] text-black font-semibold'>Uday Sangwan</h4>
+                            <a href="https://linktr.ee/uday_sangwan"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
                           </center>
                         </div>
                       <div class="col-md-6">
                         <center>
-                          <a href="https://www.linkedin.com/in/arjyo-chakraborty-baa9351bb/" target="_blank"><img
-                              src={arjyo} alt="Frontend - Arjyo " height="150px" width="150px"
+                          <a href="https://www.linkedin.com/in/yash-c88/" target="_blank"><img
+                              src={yash} alt="Frontend - Arjyo " height="150px" width="150px"
                               className='rounded-[50%]'/></a>
-                          <h4  className='text-[18px] text-black font-semibold'>Arjyo Chakraborty</h4>
-                          <h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-500'>Linkedin</h5>
+                          <h4  className='text-[18px] text-black font-semibold'>Yash Choudhary</h4>
+                          <a href="https://www.linkedin.com/in/yash-c88/"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
                         </center>
                       </div>
                       

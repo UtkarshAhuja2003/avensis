@@ -6,8 +6,37 @@ import shape2 from '../../Images/shape2.png'
 import EventCard from '../../components/Events/EventCard'
 import image from '../../Images/Speakers/speaker1.png'
 import circle from '../../Images/circle.png'
+import { fadeInLeftBig ,fadeInRightBig ,tada ,flash } from 'react-animations';
+import { StyleSheet, css } from 'aphrodite';
 
 const index = () => {
+
+    const styles = StyleSheet.create({
+        fadeInLeftBig : {
+          animationName: fadeInLeftBig ,
+          animationDuration: '2s'
+        },
+    
+        fadeInRightBig : {
+          animationName: fadeInRightBig ,
+          animationDuration: '2s'
+        },
+    
+        tada  : {
+          animationName: tada  ,
+          animationDuration: '2s'
+        },
+    
+        tada  : {
+          animationName: tada  ,
+          animationDuration: '2s'
+        },
+    
+        flash  : {
+          animationName: flash ,
+          animationDuration: '3s'
+        },
+      });
     const robotics = [
         {
             "name": "Elon Musk",
@@ -214,10 +243,9 @@ const index = () => {
                 <div id="head">
                 <img src={shape3} class="shape3"/>
                 <div id="Headtitle">
-                    <h2 class="pad">UNLEASH YOUR</h2>
-                    <h2>CREATIVITY WITH QREATE</h2>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit officia consequat duis enim velit mollit. Exercitation veniam</p>
+                <h1  className={`${css(styles.fadeInLeftBig)}`}>MULTIVERSAL ESCAPADE</h1>
+                <h2 class={`${css(styles.fadeInRightBig)}`}>"ticket to a new reality" </h2>
+                <p class={`${css(styles.flash)}`}>Step into the next dimension at AVENSIS - The Annual Technical Fest of MSIT </p>
                 </div>
                 <img src={shape2} class="shape2"/>
             </div>

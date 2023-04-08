@@ -1,11 +1,11 @@
 import React from 'react'
-import video from '../../../Images/dj_-_1257 (Original)_Trim.mp4'
+import video from '../../../Images/avensis1.M4V'
 
 const index = () => {
   return (
     <div className='bg-theme mb-24'>
-      <section className="video">
-          <video className='w-full' autoPlay loop>
+      <section className="video" id='video'>
+          <video className='w-full' autoPlay loop muted>
               <source src={video} type="video/mp4"/>
               <source src="Images/movie.ogg" type="video/ogg"/>
               Your browser does not support the video tag.
