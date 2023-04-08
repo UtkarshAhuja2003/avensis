@@ -3,7 +3,6 @@ import { FaBars, FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo_tri.png"
 import cookie from "js-cookie"
-import wow from "wowjs"
 
 const Navbar = () => {
 
@@ -24,7 +23,7 @@ const Navbar = () => {
 
 
   return (
-    <section className="wow w-full top-0 left-0 flex justify-between px-20  bg-theme py-4 ">
+    <section className=" w-full top-0 left-0 flex justify-between px-20  bg-theme py-4 ">
       <div className="cursor-pointer flex">
           <Link to ="/">
           <div  className="flex">
