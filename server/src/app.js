@@ -81,7 +81,7 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
     // sendVerifyMail(req.user.name, req.user.email, req.user.id);
-    res.redirect('http://localhost:3000/pass')
+    res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
