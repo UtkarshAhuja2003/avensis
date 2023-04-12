@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://18.205.188.178:5000",
+  "proxy": "https://avensis-backend.msit.in",
   "dependencies": {
     "@hcorta/react-to-image": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",
