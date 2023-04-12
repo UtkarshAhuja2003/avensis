@@ -76,7 +76,7 @@ app.use((req, res, next) => {
   });
 
 // app.get('http://140.238.230.33:3001/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
-app.get('http://18.205.188.178:5000/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
+app.get('http://3.83.165.12:5000/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
   // store.set("name",req.user.name)
   // console.log(store('name'))
@@ -92,13 +92,13 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
     
     res.cookie("name", req.user.name);
     res.cookie("email", req.user.email);
-    res.redirect('http://18.205.188.178:3000/pass')
+    res.redirect('http://3.83.165.12:3000/pass')
     // res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000"]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000","http://3.83.165.12:3000"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;
