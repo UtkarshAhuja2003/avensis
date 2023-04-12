@@ -9,7 +9,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://3.83.165.12:5000/auth/google/callback",
+      callbackURL: "https://avensis-backend.msit.in/auth/google/callback",
       // callbackURL: "http://140.238.230.33:3001/auth/google/callback",
       scope: ["profile", "email"],
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",

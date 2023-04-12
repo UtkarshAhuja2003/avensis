@@ -70,7 +70,7 @@ const Navbar = () => {
           ))}
           {
             user=="REGISTER"?
-            <Link to ="http://3.83.165.12:5000/auth/google/callback">
+            <Link to ="https://avensis-backend.msit.in/auth/google/callback">
             {/* <Link to ="https://avensis-backend.onrender.com/auth/google/callback"> */}
           <li>
           <button
