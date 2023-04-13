@@ -22,7 +22,7 @@ const Navbar = () => {
   //   setUser(cookie.get("name",{ domain: ''}));
   // }
   useEffect(() => {
-    fetch('https://avensis-backend.msit.in/api/current_user')
+    fetch('/api/current_user')
     .then(response => response.json())
     .then(user => {
       console.log('User info:', user);
