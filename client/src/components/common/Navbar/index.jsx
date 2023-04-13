@@ -16,12 +16,13 @@ const Navbar = () => {
 
   let [open, setOpen] = useState(false);
   const [user,setUser]=useState("REGISTER");
+  console.log(user)
   // if(cookie.get("name",{ domain: ''})&&user=="REGISTER"){
   //   console.log(user)
   //   setUser(cookie.get("name",{ domain: ''}));
   // }
   useEffect(() => {
-    fetch('/api/current_user')
+    fetch('https://avensis-backend.msit.in/api/current_user')
     .then(response => response.json())
     .then(user => {
       console.log('User info:', user);
