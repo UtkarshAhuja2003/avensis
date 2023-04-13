@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import { FaBars, FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo_tri.png"
@@ -16,10 +16,26 @@ const Navbar = () => {
 
   let [open, setOpen] = useState(false);
   const [user,setUser]=useState("REGISTER");
-  if(cookie.get("name",{ domain: ''})&&user=="REGISTER"){
-    console.log(user)
-    setUser(cookie.get("name",{ domain: ''}));
-  }
+  // if(cookie.get("name",{ domain: ''})&&user=="REGISTER"){
+  //   console.log(user)
+  //   setUser(cookie.get("name",{ domain: ''}));
+  // }
+  useEffect(() => {
+    fetch('/api/current_user')
+    .then(response => response.json())
+    .then(user => {
+      console.log('User info:', user);
+      const userName = user.name;
+      console.log('User name:', userName);
+      setUser(user.name);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  
+  }, []);
+  
+
 
 
 

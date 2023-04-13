@@ -87,7 +87,7 @@ app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => 
 
   
   app.use(cors({
-    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000","https://avensis.msit.in"]
+    origin:["https://avensis.msit.in","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000","https://avensis.msit.in"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;
@@ -96,10 +96,12 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded());
 
+
 require("./models/user");
 require("./models/form");
 
 app.use(require("./routes/form"));
+app.use(require("./routes/user"));
 
 
 app.listen(port, '0.0.0.0', ()=>{

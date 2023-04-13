@@ -1,5 +1,5 @@
 
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Logo from "../../Images/logo_tri.png"
 import { useToImage } from '@hcorta/react-to-image'
 import pass from "../../Images/passes.png"
@@ -8,9 +8,24 @@ import cookie from "js-cookie"
 const Index = () => {
   const { ref, isLoading, getPng ,dataURL} = useToImage()
   const [downloadURL, setDownloadURL] = useState(null);
-  var name,email;
-    name=cookie.get("name",{ domain: ''});
-    email=cookie.get("email",{ domain: ''});
+ const [name,setName]=useState();
+ const [email,setEmail]=useState();
+
+    useEffect(() => {
+      fetch('/api/current_user')
+      .then(response => response.json())
+      .then(user => {
+        console.log('User info:', user);
+        const userName = user.name;
+        console.log('User name:', userName);
+        setName(user.name);
+        setEmail(user.email)
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    
+    }, []);
   function display()
   {
     return <div className='ml-[42%] pt-28 font-source'>
