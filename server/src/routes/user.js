@@ -6,7 +6,7 @@ const passport = require('passport');
 const router = express.Router();
 
 // Define the route handler for /api/current_user
-router.get('https://avensis-backend.msit.in/api/current_user', (req, res) => {
+router.get('/api/current_user', (req, res) => {
   // Check if the user is authenticated
   if (req.isAuthenticated()) {
     // Return the user's name and email
