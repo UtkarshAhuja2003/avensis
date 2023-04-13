@@ -78,20 +78,9 @@ app.use((req, res, next) => {
 // app.get('http://140.238.230.33:3001/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('https://avensis-backend.msit.in/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-  // store.set("name",req.user.name)
-  // console.log(store('name'))
-//   localStorage.setItem('name', req.user.name);
-// console.log(localStorage.getItem('name'));
-// localStorage.setItem('email', req.user.email);
-    // console.log(req.user.name)
-    // window.localStorage.setItem('name', req.user.name);
-    // console.log(localStorage.getItem('name'));
-    // window.localStorage.setItem('email', req.user.email);
     
-    // sendVerifyMail(req.user.name, req.user.email, req.user.id);
-    
-    res.cookie("name", req.user.name);
-    res.cookie("email", req.user.email);
+  res.cookie("name", req.user.name, { domain: "avensis.msit.in" });
+  res.cookie("email", req.user.email, { domain: "avensis.msit.in" });  
     res.redirect('https://avensis.msit.in/pass')
     // res.redirect('https://avensismsit.netlify.app/pass')
   });
