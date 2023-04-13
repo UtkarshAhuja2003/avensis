@@ -10,9 +10,10 @@ const Index = () => {
   const [downloadURL, setDownloadURL] = useState(null);
  const [name,setName]=useState();
  const [email,setEmail]=useState();
+ console.log(name);
 
     useEffect(() => {
-      fetch('/api/current_user')
+      fetch('https://avensis-backend.msit.in/api/current_user')
       .then(response => response.json())
       .then(user => {
         console.log('User info:', user);
