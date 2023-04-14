@@ -13,7 +13,9 @@ const Index = () => {
  console.log(name);
 
     useEffect(() => {
-      fetch('https://avensis-backend.msit.in/api/current_user')
+      fetch('https://avensis-backend.msit.in/api/current_user', {
+        credentials: 'include'
+            })
       .then(response => response.json())
       .then(user => {
         console.log('User info:', user);
