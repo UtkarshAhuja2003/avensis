@@ -79,15 +79,15 @@ app.use((req, res, next) => {
 app.get('https://avensis-backend.msit.in/auth/google', passport.authenticate('google', { scope: ['profile','email'] }));
 app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
     
-  res.cookie("name", req.user.name, { domain: "avensis.msit.in" });
-  res.cookie("email", req.user.email, { domain: "avensis.msit.in" });  
+  // res.cookie("name", req.user.name, { domain: "avensis.msit.in" });
+  // res.cookie("email", req.user.email, { domain: "avensis.msit.in" });  
     res.redirect('https://avensis.msit.in/pass')
     // res.redirect('https://avensismsit.netlify.app/pass')
   });
 
   
   app.use(cors({
-    origin:["https://avensis.msit.in","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000","https://avensis.msit.in"]
+    origin:["http://localhost:3000","https://avensismsit.netlify.app"," https://accounts.google.com","http://140.238.230.33:3002","https://avensis.onrender.com","http://18.205.188.178:3000","https://avensis.msit.in"]
 }));
 require("./db/conn");
 const port = process.env.PORT || 5000;
