@@ -31,9 +31,9 @@ const Index = () => {
     }, []);
   function display()
   {
-    return <div className='ml-[42%] pt-28 font-source'>
-                <h1 className='text-2xl '>Name: {name}</h1>
-                <h1 className='text-2xl '>Email: {email}</h1>
+    return <div className='ml-[42%] pt-[40px] md:pt-28 font-source'>
+                <h1 className='text-sm md:text-2xl '>Name: {name}</h1>
+                <h1 className='text-sm md:text-2xl '>Email: {email}</h1>
             </div>
   }
 
@@ -46,13 +46,14 @@ const Index = () => {
 
   return (
     <div className='w-full' ref={ref}>
-        <div className='bg-cover bg-[url("https://i.ibb.co/LkxhLGc/passes.png")] h-[260px]  w-[800px] mx-auto shadow-lg  my-24 shadow-white'>
+        <div className='bg-cover bg-[url("https://i.ibb.co/LkxhLGc/passes.png")] h-[115px] md:h-[260px]  w-[370px] md:w-[800px] mx-auto shadow-lg  my-24 shadow-white'>
         
                 {display()}
 
       </div>
       {/* {isLoading && 'loading...'} */}
-      <button className='mb-24 ml-[46%] font-medium font-dm tracking-wider bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]
+      <button className='mb-24 ml-[36%] md:ml-[46%] font-medium font-dm tracking-wi
+      der bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]
     duration-500' onClick={handleDownload}>Download</button>
     </div>
   )

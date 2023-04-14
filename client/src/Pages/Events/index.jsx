@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../components/common/Navbar'
 import Footer from '../../components/common/Footer'
 import shape3 from '../../Images/shape3.png'
@@ -10,7 +10,10 @@ import { fadeInLeftBig ,fadeInRightBig ,tada ,flash } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import { Events } from '../../config/events.js'
 
-const index = () => {
+const Index = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, []);
 
     const styles = StyleSheet.create({
         fadeInLeftBig : {
@@ -168,4 +171,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

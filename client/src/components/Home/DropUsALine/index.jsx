@@ -37,8 +37,8 @@ const Index = () => {
   return (
     <div className="bg-[#171221] py-[5%] mx-full mt-12">
         <div className="md:flex justify-between mx-[10%] md:mx-[13%]">
-            <div className="">
-                <p className='text-white font-[ultra] ml-2 text-2xl md:text-4xl tracking-widest'> DROP US A LINE</p>
+            <div className="w-full md:w-[40%]">
+                <h1 className='text-white font-[ultra] text-2xl md:text-[32px] tracking-widest'> DROP US A LINE</h1>
                 {register==0 &&
                     <form method='POST'>
                     <input type="string"

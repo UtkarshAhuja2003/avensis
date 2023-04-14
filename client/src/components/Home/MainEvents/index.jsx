@@ -71,7 +71,7 @@ const Index = () => {
                 </div>
         </div>
         </section>
-        <div className='h-48'></div>
+        <div className='md:h-48'></div>
     </div>
   )
 }

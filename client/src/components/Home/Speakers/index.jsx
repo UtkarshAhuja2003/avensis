@@ -96,10 +96,10 @@ const index = () => {
         </div>
         <div className='w-full text-center text-4xl md:text-5xl font-[ultra] tracking-widest'>
             <h1 className='text-white mt-2'>WANT TO BE A</h1>
-            <h1 className='text-[#EBB22D] mt-4'>SPONSOR?</h1>
+            <h1 className='text-[#EBB22D]  mt-2 md:mt-4'>SPONSOR?</h1>
             <div className='flex justify-between w-[70%] md:w-[33%] mt-8 mx-auto'>
-                <button className='w-[122px] md:w-[172px] font-[roboto] text-white text-lg md:text-xl py-[12px] rounded-full bg-gradient-to-r from-[#771EBD] to-[#BF17C3]'>REGISTER</button>
-                <a href="#footer"><button className='w-[120px] md:w-[170px] font-[roboto] text-white text-lg md:text-xl py-[10px] rounded-full border-[2px] border-white'>CONTACT</button></a>
+                <a href="#"><button className='w-[120px] md:w-[170px] font-[roboto] text-white text-lg md:text-xl py-[12px] rounded-full  bg-gradient-to-r from-[#771EBD] to-[#BF17C3]'>REGISTER</button></a>
+                <a href="#footer" className='ml-3'><button className='w-[120px] md:w-[170px] font-[roboto] text-white text-lg md:text-xl py-[10px] rounded-full border-[2px] border-white'>CONTACT</button></a>
         </div>
         </div>
         <div className='w-full mt-12'>

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/common/Navbar'
 import Footer from '../../components/common/Footer'
 import eventImage from "../../Images/unsplash_hgO1wFPXl3I.png"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import image1 from '../../Images/shape3.png'
 import image2 from '../../Images/shape2.png'
 import image3 from '../../Images/circle.png'
@@ -19,6 +19,9 @@ import { useParams } from 'react-router-dom';
 import { Events } from '../../config/events.js';
 
 const Index = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   
   const { id } = useParams();
 

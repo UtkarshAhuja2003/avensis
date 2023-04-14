@@ -25,12 +25,6 @@ const index = () => {
       animationName: tada  ,
       animationDuration: '2s'
     },
-
-    tada  : {
-      animationName: tada  ,
-      animationDuration: '2s'
-    },
-
     flash  : {
       animationName: flash ,
       animationDuration: '3s'
@@ -52,13 +46,10 @@ const index = () => {
             </div>
             <img src={image2} className="shape2"/>
         </div>
-        <div className="buttons">
-        {/* <Link to ="http://140.238.230.33:3001/auth/google/callback"> */}
-            <Link to ="https://avensis-backend.msit.in/auth/google/callback">
-          <button className= {`subscribe2 ${css(styles.tada)}`}  >GET PASS</button>
-          </Link>
+        <div className="buttons ">
+            <Link to ="https://avensis-backend.msit.in/auth/google/callback"><button className= {`md:mt-16 subscribe2 ${css(styles.tada)}`}>GET PASS</button></Link>
             <div className='w-[40px]'></div>
-            <Link to="/events"><button className= {`subscribe3 ${css(styles.tada)}`} >EXPLORE</button></Link>
+            <Link to="/events"><button className= {`md:mt-16 subscribe3 ${css(styles.tada)}`} >EXPLORE</button></Link>
         </div>
         <img src={image3} id="shape5"/>
         </section>

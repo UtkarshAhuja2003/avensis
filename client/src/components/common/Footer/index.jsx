@@ -47,36 +47,18 @@ const Footer = () => {
 
 
         {/* <div className='grid grid-cols-1 md:grid-cols-4 ml-4 '> */}
-        <div class="flex-wrap md:flex m-0 w-[80%] md:w-[90%] mx-auto md:ml-0">
-          <div className='flex '>
-             <div className='md:ml-[140px] text-[13px] mt-[2px] md:text-sm  flex'>
-
-              {/* follow */}
-
-                <div className=' flex  '>
-                    <h4>FOLLOW US </h4>
-                  </div>
-                    <div className='py-1 '>
-                    <a  href='https://www.instagram.com/avensis_2023/'> <FaInstagram className='fa-brands fa-instagram fa-2 ml-2'></FaInstagram></a> </div>
-                     </div>
-
-
-                     {/* mail */}
-               <div className='flex ml-4'>
-              <FiMail className='mt-1 '></FiMail>              
+        <div class="md:flex justify-between m-0 w-[80%] md:w-[80%] mx-auto">
+          <div className=' flex'>
+              <h4>FOLLOW US </h4>
+              <div className='py-1 '>
+              <a  href='https://www.instagram.com/avensis_2023/'> <FaInstagram className='fa-brands fa-instagram fa-2 ml-2'></FaInstagram></a> </div>
+              <FiMail className='mt-1 ml-2'></FiMail>              
               <a className=' ml-1' href="mailto:avensis2023@msit.in">avensis2023@msit.in</a>
-            </div> 
-            </div>
-
-
-              <div className='md:ml-32 ml-4 '>
+          </div>
+                  <div className=''>
                <h4> MSIT C-4 JANAKPURI, Delhi 110058 </h4>
-              </div>
-
-                <div class="follow2  mb-4 flex ">
-                   <h4 className="md:ml-[125px] text-[12px] md:text-sm ">Coded with ❤ by <button onClick={displayTeam} className=   'text-[#EBB22D] font-bold text-[13px]'>Tech Team, Avensis</button></h4>
-                </div>
-            </div>
+              </div><h4 className="text-[12px] md:text-sm ">Coded with ❤ by <button onClick={displayTeam} className=   'text-[#EBB22D] font-bold text-[13px]'>Tech Team, Avensis</button></h4>
+        </div>
           
 
         
