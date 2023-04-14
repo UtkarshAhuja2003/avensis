@@ -8,6 +8,7 @@ import image from '../../Images/Speakers/speaker1.png'
 import circle from '../../Images/circle.png'
 import { fadeInLeftBig ,fadeInRightBig ,tada ,flash } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
+import { Events } from '../../config/events.js'
 
 const index = () => {
 
@@ -37,205 +38,13 @@ const index = () => {
           animationDuration: '3s'
         },
       });
-    const robotics = [
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },{
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        }
-    ];
 
-    const literary = [
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-    ];
-    const technical = [
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-    ];
-    const gaming = [
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        }
-    ];
-    const creativity = [
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        },
-        {
-            "name": "Elon Musk",
-            "date": "MAY 13th",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": image,
-            "time": "11:00am - 1:00pm"
-        }
-    ];
+      const literary = Events.slice(6,9);
+      const technical = Events.slice(9,10);
+      const gaming = Events.slice(2,6);
+      const creativity = Events.slice(0,2);
+
+
   return (
     <div className='bg-[#171221]'>
       <Navbar/> 
@@ -253,13 +62,15 @@ const index = () => {
 
             <div class="eventS">
         <div class="event-theme">
-            <img src={circle} class="circle1"/>
-            <img src={circle} class="circle2"/>
+            {/* <img src={circle} class="circle1"/>
+            <img src={circle} class="circle2"/> */}
           <span class="eventstitle">ROBOTICS</span>
           <div class="event-boxes">
             {
-                robotics.map(event => (
+                Events.map(event => (
                     <EventCard
+                        catName = {event.catName}
+                        id = {event.id}
                         name = {event.name}
                         time = {event.time}
                         image = {event.image}
@@ -278,6 +89,8 @@ const index = () => {
             {
                 literary.map(event => (
                     <EventCard
+                        catName = {event.catName}
+                        id = {event.id}
                         name = {event.name}
                         time = {event.time}
                         image = {event.image}
@@ -296,6 +109,8 @@ const index = () => {
             {
                 technical.map(event => (
                     <EventCard
+                        catName = {event.catName}
+                        id = {event.id}
                         name = {event.name}
                         time = {event.time}
                         image = {event.image}
@@ -314,6 +129,8 @@ const index = () => {
             {
                 gaming.map(event => (
                     <EventCard
+                        catName = {event.catName}
+                        id = {event.id}
                         name = {event.name}
                         time = {event.time}
                         image = {event.image}
@@ -332,6 +149,8 @@ const index = () => {
             {
                 creativity.map(event => (
                     <EventCard
+                        catName = {event.catName}
+                        id = {event.id} 
                         name = {event.name}
                         time = {event.time}
                         image = {event.image}

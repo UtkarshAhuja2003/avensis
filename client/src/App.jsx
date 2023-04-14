@@ -16,11 +16,10 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/events' element={<Events/>} />
         <Route path='/pass' element={<Pass/>} />
-        <Route path='/event' element={<EventPage/>} />
+        <Route path='/:catName/:id' element={<EventPage/>} />
       </Routes>
     </div>
   );
 };
 
 export default App;
-

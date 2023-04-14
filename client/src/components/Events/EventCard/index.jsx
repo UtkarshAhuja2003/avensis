@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const index = (data) => {
   return (
-    <div>
+    <Link to={`/${data.catName}/${data.id}`}><div>
       <div class="event-box my-4"  id="eventstart">
               <div class="flip-cont">
                   
@@ -33,7 +34,7 @@ const index = (data) => {
                  </div>
               </div>
           </div>
-    </div>
+    </div></Link>
   )
 }
 
