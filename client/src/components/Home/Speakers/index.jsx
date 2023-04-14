@@ -7,7 +7,7 @@ import DecorativeLine from '../../../Images/DecorativeLine.png'
 import image2 from '../../../Images/Workshops/workshop1.png'
 import image3 from '../../../Images/companylogo.png'
 import shape3 from '../../../Images/shape3.png'
-
+import { Events } from '../../../config/events.js'
 
 const index = () => {
     const speakers = [
@@ -124,19 +124,19 @@ const index = () => {
                 <div className='md:ml-[10%] md:mt-12'>
                 <div className='md:flex'>
                     <div className='bg-[#1D1332] flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
-                        <img className='w-[120px]' src={image2} alt="" />
+                        <img className='w-[120px]' src={Events[7].tabs[0].image} alt="" />
                         <div className='text-white pl-3 font-[roboto]'>
                             <h1 className='text-xl md:text-2xl font-bold'>The Conquerors </h1>
-                            <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1000/-</h1>
-                            <h1 className='text-sm'>11:00am, April 28th</h1>
+                            {/* <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1000/-</h1> */}
+                            <h1 className='text-sm mt-6'>April 19th</h1>
                         </div>
                     </div>
                     <div className='bg-[#1D1332] mt-6 md:mt-0 flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
-                        <img src={image2} alt="" />
+                        <img src={Events[9].tabs[0].image} alt="" />
                         <div className='text-white pl-3 font-[roboto]'>
-                            <h1 className='text-2xl font-bold'>Pick up the thread</h1>
-                            <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
-                            <h1 className='text-sm'>11:00am, April 28th</h1>
+                            <h1 className='text-2xl font-bold'>Hackavenue</h1>
+                            {/* <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1> */}
+                            <h1 className='text-sm mt-6'>April 19th</h1>
                         </div>
                     </div>
                 </div>
@@ -145,19 +145,19 @@ const index = () => {
                 <div className='md:ml-[25%] mt-6 md:mt-12'>
                     <div className='md:flex'>
                         <div className='bg-[#1D1332] flex rounded-lg p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
-                            <img src={image2} alt="" />
+                            <img src={Events[13].tabs[0].image} className='w-1/2' alt="" />
                             <div className='text-white pl-3 font-[roboto]'>
-                                <h1 className='text-2xl font-bold'>Sike the Psych</h1>
-                                <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
-                                <h1 className='text-sm'>11:00am, April 28th</h1>
+                                <h1 className='text-2xl font-bold'>ROBOMAZE</h1>
+                                {/* <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1> */}
+                                <h1 className='text-sm mt-6'>April 19th</h1>
                             </div>
                         </div>
                         <div className=' mt-6 md:mt-0 bg-[#1D1332] flex rounded-lg  p-2 md:p-4 w-[340px] md:w-[370px] h-[120px] md:h-[160px] mx-[5%]'>
-                            <img src={image2} alt="" />
+                            <img src={Events[5].tabs[0].image} alt="" />
                             <div className='text-white pl-3 font-[roboto]'>
-                                <h1 className='text-2xl font-bold'>COMING SOON</h1>
-                                <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1>
-                                <h1 className='text-sm'>11:00am, April 28th</h1>
+                                <h1 className='text-2xl font-bold'>Call Of Duty</h1>
+                                {/* <h1 className='text-sm text-[#EBB22D] mt-6 blur-[3px]'>Rs 1799/-</h1> */}
+                                <h1 className='text-sm mt-6'>April 19th</h1>
                             </div>
                         </div>
                     </div>

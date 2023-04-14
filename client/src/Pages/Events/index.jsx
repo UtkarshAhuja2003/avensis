@@ -43,9 +43,10 @@ const Index = () => {
       });
 
       const literary = Events.slice(6,9);
-      const technical = Events.slice(9,10);
+      const technical = Events.slice(9,12);
       const gaming = Events.slice(2,6);
       const creativity = Events.slice(0,2);
+      const robotics = Events.slice(12,14);
 
 
   return (
@@ -76,7 +77,7 @@ const Index = () => {
                         id = {event.id}
                         name = {event.name}
                         time = {event.time}
-                        image = {event.image}
+                        image = {event.tabs[0].image}
                         date = {event.date}
                         desc = {event.desc}
                     />
@@ -90,13 +91,13 @@ const Index = () => {
           <span class="eventstitle">ROBOTICS</span>
           <div class="event-boxes">
             {
-                Events.map(event => (
+                robotics.map(event => (
                     <EventCard
                         catName = {event.catName}
                         id = {event.id}
                         name = {event.name}
                         time = {event.time}
-                        image = {event.image}
+                        image = {event.tabs[0].image}
                         date = {event.date}
                         desc = {event.desc}
                     />
@@ -116,7 +117,7 @@ const Index = () => {
                         id = {event.id}
                         name = {event.name}
                         time = {event.time}
-                        image = {event.image}
+                        image = {event.tabs[0].image}
                         date = {event.date}
                         desc = {event.desc}
                     />
@@ -136,7 +137,7 @@ const Index = () => {
                         id = {event.id}
                         name = {event.name}
                         time = {event.time}
-                        image = {event.image}
+                        image = {event.tabs[0].image}
                         date = {event.date}
                         desc = {event.desc}
                     />
@@ -156,7 +157,7 @@ const Index = () => {
                         id = {event.id} 
                         name = {event.name}
                         time = {event.time}
-                        image = {event.image}
+                        image = {event.tabs[0].image}
                         date = {event.date}
                         desc = {event.desc}
                     />

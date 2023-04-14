@@ -10,11 +10,6 @@ import image4 from '../../Images/Sphere-Black-Matte1(1).png'
 import image5 from '../../Images/DecorativeLine.png'
 import './../../style.css';
 import parse from 'html-react-parser';
-import Sustainablity from '../../Images/Events/Technical/Hackavenue/Sustainablity.jpg'
-import HealtCare from '../../Images/Events/Technical/Hackavenue/Health.jpg'
-import  Social from '../../Images/Events/Technical/Hackavenue/Social.jpg'
-import Finance  from '../../Images/Events/Technical/Hackavenue/Finance.jpg'
-import About from '../../Images/Events/Technical/Hackavenue/logo.jpg'
 import { useParams } from 'react-router-dom';
 import { Events } from '../../config/events.js';
 
@@ -62,7 +57,8 @@ const Index = () => {
             <img className='w-[90%] mx-auto' src={technical[0].tabs[currentTab].image} alt="" />
             <h1 className='text-[roboto] text-2xl mt-6'>{technical[0].name}</h1>
             <h1 className='text-[roboto] text-2xl mt-2'>{technical[0].desc}</h1>
-            <button className='text-2xl w-[80%] mx-[10%] py-[1px] mt-4 border-2 border-white rounded-lg'>Details</button>
+            {/* <button className='text-2xl w-[80%] mx-[10%] py-[1px] mt-4 border-2 border-white rounded-lg'>Details</button> */}
+            { technical[0].link && <a href={technical[0].link}><button className='text-2xl w-[80%] mx-[10%] py-[1px] mt-4 border-2 border-white rounded-lg'>Register</button></a> }
           </div>
           <div className='w-[100%] md:w-[70%] pl-2 md:pl-16'>
             <h1></h1>

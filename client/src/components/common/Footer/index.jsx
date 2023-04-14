@@ -5,6 +5,10 @@ import utkarsh from '../../../Images/team/utkarsh.png'
 import uday from '../../../Images/team/uday.jpeg'
 import kaif from '../../../Images/team/kaif.jpeg'
 import yash from '../../../Images/team/yash.jpeg'
+import chutia from '../../../Images/team/chutia.jpg'
+import anshita from '../../../Images/team/anshita.jpg'
+import kratika from '../../../Images/team/kratika.jpg'
+import harsh from '../../../Images/team/harsh.jpg'
 import { FiMail } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaFirefoxBrowser } from "react-icons/fa";
@@ -18,6 +22,60 @@ const Footer = () => {
   function hideTeam()
   {
     setCount(0);
+  }
+  const team = [
+    {
+      name: "Tanay Aggarwal",
+      linkedIn:"https://www.tanayaggarwal.com",
+      image : tanay,
+    },
+    {
+      name: "Utkarsh Ahuja",
+      linkedIn:"https://linktr.ee/ahuja_utkarsh",
+      image : utkarsh,
+    },
+    {
+      name: "Uday Sanghwan",
+      linkedIn:"https://linktr.ee/uday_sangwan",
+      image : uday,
+    },
+    {
+      name: "Mohd Kaif",
+      linkedIn:"https://www.linkedin.com/in/mohd-kaif-7ba250228",
+      image : kaif,
+    },
+    {
+      name: "Yash Chaudhary",
+      linkedIn:"https://www.linkedin.com/in/yash-c88/",
+      image : yash,
+    },
+    {
+      name: "Anshita Chaudhary",
+      linkedIn:"https://www.linkedin.com/in/kratika-suri-429229228",
+      image : anshita,
+    },
+    {
+      name: "Ankit Chaudhary",
+      linkedIn:"https://www.linkedin.com/in/anshita-chaudhary-7b0272253",
+      image : chutia,
+    },
+    {
+      name: "Kratika Suri",
+      linkedIn:"https://www.linkedin.com/in/kratika-suri-429229228",
+      image : kratika,
+    },{
+      name: "Harsh Jain",
+      linkedIn:"https://www.linkedin.com/in/harsh-jain-10467a22b",
+      image : harsh,
+    },
+  ];
+  function memberCard(member)
+  {
+    return <div class="mx-[15px] w-[160px]">
+                <a href={member.linkedIn} target="_blank"><img src={member.image} className=' mx-auto rounded-[50%] w-36 h-36'/></a>
+                <h4 className='text-[18px] text-black font-semibold'>{member.name}</h4>
+                <a href={member.linkedIn}><h5 className='font-bold text-[16px] text-blue-600 '>Linkedin</h5></a>
+            </div>
   }
   return (
     <div id="footer"  className='m-0 bg-[url(https://i.ibb.co/vhQq6hM/footer-back.png)] '>
@@ -64,62 +122,20 @@ const Footer = () => {
         
 
         {count==1 &&
-                 <div className='modal fade top-0 sticky text-black mx-auto w-[80%] lg:w-[40%] bg-white rounded-lg' id="exampleModal">
-                 <div className='w-full py-4 border-b-2 border-gray mb-2'>
-                    <h5 className='text-black font-[roboto] font-medium text-2xl ml-12' >Meet the team</h5>
-                  </div>
-                  <div className='w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 my-2'>
-                  <div class="col-md-6">
-                        <center>
-                          <a href="https://www.tanayaggarwal.com" target="_blank"><img src={tanay}
-                              alt="Tech head - Tanay " className='rounded-[50%]'/></a>
-                          <h4 className='text-[18px] text-black font-semibold'>Tanay Aggarwal</h4>
-                          <a href="https://www.tanayaggarwal.com"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
-                        </center>
-                      </div>
-                      <div class="col-md-6">
-                        <center>
-                          <a href="https://linktr.ee/ahuja_utkarsh" target="_blank"><img
-                              src={utkarsh} alt="Backend - Aman " height="150px" width="150px"
-                              className='rounded-[50%]'/></a>
-                          <h4 className='text-[18px] text-black font-semibold'>Utkarsh Ahuja</h4>
-                          <a href="https://linktr.ee/ahuja_utkarsh"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
-                          
-                        </center>
-                      </div>
-                      <div class="col-md-6">
-                          <center>
-                            <a href="https://www.linkedin.com/in/mohd-kaif-7ba250228" target="_blank"><img
-                                src={kaif} alt="Backend - Aman " height="150px" width="150px"
-                                className='rounded-[50%]'/></a>
-                            <h4 className='text-[18px] text-black font-semibold'>Mohd Kaif</h4>
-                            <a href="https://www.linkedin.com/in/mohd-kaif-7ba250228"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
-                          </center>
-                        </div>
-                        <div class="col-md-6">
-                          <center>
-                            <a href="https://linktr.ee/uday_sangwan" target="_blank"><img
-                                src={uday} alt="Backend - Aman " height="150px" width="150px"
-                                className='rounded-[50%]'/></a>
-                            <h4  className='text-[18px] text-black font-semibold'>Uday Sangwan</h4>
-                            <a href="https://linktr.ee/uday_sangwan"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
-                          </center>
-                        </div>
-                      <div class="col-md-6">
-                        <center>
-                          <a href="https://www.linkedin.com/in/yash-c88/" target="_blank"><img
-                              src={yash} alt="Frontend - Arjyo " height="150px" width="150px"
-                              className='rounded-[50%]'/></a>
-                          <h4  className='text-[18px] text-black font-semibold'>Yash Choudhary</h4>
-                          <a href="https://www.linkedin.com/in/yash-c88/"><h5 style={{color:"#0077B5"}} className='text-[14px] text-blue-50 0'>Linkedin</h5></a>
-                        </center>
-                      </div>
-                      
-                  </div>
-                  <div className='w-full border-t-2 border-grey'>
-                   <button onClick={hideTeam} type="button" id="closeteam" className='ml-[76%] mt-4' data-dismiss="modal">Close</button>
-                  </div>
-             </div>}
+                <div className=' w-[80%] mx-auto bg-white rounded-lg text-black fixed top-[5%] left-[10%]'>
+                <h1 className='py-3 ml-[10%] text-3xl font-semibold text-black'>Meet the team</h1>
+                <div className='w-full h-[2px] bg-gray-300'></div>
+                <div className='w-[90%] flex flex-wrap mx-auto justify-around text-center mt-3'>
+                        {team.map((member) => (
+                          memberCard(member)
+                        ))}
+
+                </div>
+                <div className='w-full h-[2px] bg-gray-300'></div>
+                <button onClick={hideTeam} type="button" id="closeteam" className='ml-[85%] my-2' data-dismiss="modal">Close</button>
+              </div>
+                 }
+
 
 
 
