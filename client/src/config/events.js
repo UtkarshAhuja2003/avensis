@@ -13,10 +13,11 @@ import bgmi from '../Images/Events/Gaming/bgmi.jpeg'
 import cod from '../Images/Events/Gaming/cod.jpeg'
 import stumble from '../Images/Events/Gaming/su,nle.jpeg'
 import valo from '../Images/Events/Gaming/valo.jpeg'
-import conq from '../Images/Events/literary/conq.jpeg'
+// import conq from '../Images/Events/literary/conq.jpeg'
 import physchs from '../Images/Events/literary/physchs.jpeg'
 import threads from '../Images/Events/literary/threads.jpeg'
-import image22 from '../Images/Events/Technical/Hackavenue/code_conquer.jpg'
+import image22 from "../Images/Events/Technical/Hackavenue/codeConquer.jpeg"
+// import image22 from '../Images/Events/Technical/codeConquer.jpeg'
 import image23 from '../Images/Events/Technical/Hackavenue/wizard.png'
 
 
@@ -25,7 +26,7 @@ export const Events = [
     id: 0,
     name:"Clue minati",
     catName:"fun_crev",
-    desc:"prize-3000 INR",
+    desc:"prize: ₹3000 ",
     date: "APRIL 19th",
     time: "11:00am - 1:00pm",
     tabs: [
@@ -68,7 +69,7 @@ export const Events = [
     catName:"fun_crev",
     date: "APRIL 19th",
     time: "11:00am - 1:00pm",
-    desc:"prize-3000 INR",
+    desc:"prize: ₹3000 ",
     tabs: [
       {
         name:"ABOUT",
@@ -241,7 +242,7 @@ export const Events = [
       catName:"literary",
       date: "APRIL 19th",
      
-      desc:"PRIZE-3000 ",
+      desc:"PRIZE: ₹3000 ",
       tabs: [
         {
           name:"ABOUT",
@@ -283,37 +284,37 @@ export const Events = [
       catName:"literary",
       date: "APRIL 19th",
       // time: "11:00am - 1:00pm",
-      desc:"Prizes - 3500 and 1500",
+      desc:"Prizes: ₹3500 and ₹1500",
       tabs: [
         {
           name:"ABOUT",
           id:0,
-          image: conq,
+          image: image22,
           content: "Each participant will be made to represent a buyer and a seller, they will be given a product at some base price and both have to negotiate on that base price. Buyer will target to buy the product at lowest possible price in accordance with the base price and seller will negotiate to sell the product as high as possible. Event will consist of multiple rounds at increasing difficulty level."
         },
         {
           name:"SIZE",
           id:1,
-          image: conq,
+          image: image22,
           content: " Individual Participation "
                     
         },
         {
           name:"EXPECTED FOOTFALL",
           id:2,
-          image: conq,
+          image: image22,
           content: " 30+"
         },
         {
           name:"REQIREMENT",
           id:3,
-          image: conq,
+          image: image22,
           content: " <div className='text-2xl'>Preference 1: Common room Preference <br/> 2: Any classroom </div>"
         },
         {
           name:"THEME",
           id:4,
-          image: conq,
+          image: image22,
           content: "Related to corporate meeting"
         },
       ],
@@ -327,7 +328,7 @@ export const Events = [
       catName:"literary",
       date: "APRIL 19th",
       // time: "11:00am - 1:00pm",
-      desc:"Prizes - 0500 and 1500",
+      desc:"Prizes - ₹5000 and ₹1500",
       tabs: [
         {
           name:"ABOUT",
@@ -364,9 +365,9 @@ export const Events = [
     },{
         id: 9,
         name:"Hackavenue",
-        desc:"PRIZE: Worth 15,000 ",
-        date: "APRIL 19th",
-        // time: "11:00am - 1:00pm",
+        desc:"PRIZE: Worth ₹15,000 ",
+        date: "APRIL 19th-20th",
+        time: "10:00am Onwards",
         link:"https://forms.gle/DRYqRjoQXjMwWgSR8",
         catName:"technical",
         tabs: [
@@ -374,20 +375,20 @@ export const Events = [
             name:"ABOUT",
             image: image1,
             id:0,
-            content: "Hack Avenue is a 2-day long-running hackathon, which will be held on the 17th and 18th of April 2023 calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers . Throughout the 2 days hackers at Hack Avenue will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending."
+            content: "Hack Avenue is a 2-day long-running hackathon, which will be held on the 19th and 20th of April 2023 calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers . Throughout the 2 days hackers at Hack Avenue will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending."
           },
           {
             name:"TRACKS",
             image: image1,
             id:1,
-            content: " <span className=' text-[#4A9FA0] font-bold '> Finance: </span> <p>The application of technology to financial services,including banking,investing and payments.</p> <br/> <span className='text-[#4A9FA0] font-bold '>HealtCare:</span> <p>The use of technology to improve healthcare outcomes, including medical devices , telemedicine , and data analytics</p>  <br/> <span className='text-[#4A9FA0] font-bold' >Sustainablity:</span><p> innovation are creative and wild ideas that solve any environmental problem </p>  <br/>   <span className='text-[#4A9FA0] font-bold'>Social Impact:</span> <p>Everything has a cause in this rapid growing world </p>"
+            content: " <span className=' text-[#4A9FA0] font-bold '> Finance: </span> <p>The application of technology to financial services, including banking, investing and payments.</p> <br/> <span className='text-[#4A9FA0] font-bold '> HealthCare:</span> <p>The use of technology to improve healthcare outcomes, including medical devices, telemedicine, and data analytics</p>  <br/> <span className='text-[#4A9FA0] font-bold' >Sustainablity:</span><p> Innovation are creative and wild ideas that solve any environmental problem </p>  <br/>   <span className='text-[#4A9FA0] font-bold'>Social Impact:</span> <p>Everything has a cause in this rapid growing world </p>"
                       
           },
           { 
             name:"PRIZES",
             image: image1,
             id:2,
-            content: " <div className= 'font-bold text-white'>  First prize -6000rs    <br/>      Second Prize-3000rs     <br/>    Third Prize-1000rs</div>"
+            content: " <div className= 'font-bold text-white'>  First Prize: ₹6000    <br/>      Second Prize: ₹3000     <br/>    Third Prize: ₹1500</div>"
           },
           {
             name:"SPEAKERS",
@@ -396,10 +397,10 @@ export const Events = [
             content: " Coming Soon "
           },
           {
-            name:"GUIDELINES DAY-2",
+            name:"GUIDELINES",
             image: image1,
             id:4,
-            content: "There is no restriction on the type of hack you build or who the hack is for software , prototypes abd ideas hack are all allowed <br/> Participants are not allowed to start their project before the hackathon starts <br/> you are not allowed to reuse code from exicting projects <br/> Usage of open-source libraries/packages is allowed <br/> Participants must bring their own laptop"
+            content: "There is no restriction on the type of hack you build or who the hack is for software , prototypes and ideas hack are all allowed <br/> Participants are not allowed to start their project before the hackathon starts <br/> you are not allowed to reuse code from existing projects <br/> Usage of open-source libraries/packages is allowed <br/> Participants must bring their own laptop"
           },
       
       ],
@@ -407,10 +408,11 @@ export const Events = [
     {
       id: 10,
       name:"CODE-CONQUER",
-      desc:"PRIZE: 6,000 INR",
-      date: "APRIL 19th",
-      time: "11:00am - 1:00pm",
+      desc:"PRIZE:  Goodies and Certificates",
+      date: "APRIL 19th-20th",
+      time: "10:00am Onwards",
       catName:"technical",
+      link:"https://forms.gle/X37fV4ErVgpoUZCk6",
       tabs: [
         {
           name:"ABOUT",
@@ -430,15 +432,22 @@ export const Events = [
           image: image22,
           id:2,
           content: " <div className= 'font-bold text-white'> Try to beat the challengers as fast as possible as it will help you to gain a chance to beat the ultimate challenger.</div>"
-        }    
+        }  ,  
+        { 
+          name:"VENUE",
+          image: image22,
+          id:3,
+          content: " <div className= 'font-bold text-white'> MSIT , C-4 Janakpuri </div>"
+        } 
     ],
   },
   {
     id: 11,
-    name:"Hackavenue",
-    desc:"  ",
+    name:"Web Wizard",
+    desc:"PRIZE:  Goodies and Certificates ",
     date: "APRIL 19th-20th",
-    time: "11:00am - 1:00pm",
+    time: "10:00am Onwards",
+    link: "https://forms.gle/WMbWH4NPvagp1btj7",
     catName:"technical",
     tabs: [
       {
@@ -451,7 +460,7 @@ export const Events = [
         name:"THEMES",
         image: image23,
         id:1,
-        content: " <div className='font-bold '><ul><li>Sustainable Fashion and Beauty Blog.</li><li>Pet Adoption and Rescue/Secure.</li><li>Virtual Fitness Studio.</li><li>Meditation for a Healthy Mind.</li></ul></div>"
+        content: " <div className='font-bold '><ul><li>1. Sustainable Fashion and Beauty Blog.</li><br/><li>2. Pet Adoption and Rescue/Secure.</li><br/><li>3. Virtual Fitness Studio.</li><br/><li>4. Meditation for a Healthy Mind.</li></ul></div>"
                   
       },
       { 
@@ -459,7 +468,13 @@ export const Events = [
         image: image23,
         id:2,
         content: " <div className= 'font-bold text-white'>What is in the Event:<br/><br/>1. After Registration, the Participants get allotted 1 desktop.<br/><br/>2. On choosing a favourable topic they have 1 hour to design their website to compete with other participants to secure their points.<br/><br/>3.Participants or the team selected by our judges is pronounced as the winner.</div>"
-      }  
+      }  ,
+      { 
+        name:"VENUE",
+        image: image23,
+        id:3,
+        content: " <div className= ' text-[#4A9FA0] text-white'> <span className=' text-white font-bold'> LAB-05 </span> <br/> MSIT GROUND FLOOR </div>"
+      } 
   ],
 },
     {
@@ -468,7 +483,7 @@ export const Events = [
   catName:"robotics",
   date: "APRIL 19th",
   time: "1:30pm Onwards",
-  desc:"prize-4000 , 2500 , 1500",
+  desc:"prize: ₹4000 , ₹2500 , ₹1500",
   link:"https://forms.gle/fF9MAEarfxnX5v2H8",
   tabs: [
     {
@@ -515,7 +530,7 @@ name:"Robo_maze",
 date: "APRIL 19th ",
   time: "10:30pm Onwards",
 catName:"robotics",
-desc:"prize-2000 , 1200 , 800",
+desc:"prize: ₹2000 , ₹1200 , ₹800",
 link:"https://forms.gle/wpzQ4XNEYC7nZaFD9",
 tabs: [
 {
@@ -558,7 +573,7 @@ tabs: [
   id: 14,
 name:"Clue minati",
 catName:"fun_crev",
-desc:"prize-3000",
+desc:"prize: ₹3000",
 date: "APRIL 19th",
 time: "11:00am - 1:00pm",
 link:"https://forms.gle/y1ENMVrmZVaNFjdq7",

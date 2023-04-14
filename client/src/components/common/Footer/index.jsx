@@ -35,7 +35,7 @@ const Footer = () => {
       image : utkarsh,
     },
     {
-      name: "Uday Sanghwan",
+      name: "Uday Sangwan",
       linkedIn:"https://linktr.ee/uday_sangwan",
       image : uday,
     },
@@ -74,7 +74,7 @@ const Footer = () => {
     return <div class="mx-[15px] w-[160px]">
                 <a href={member.linkedIn} target="_blank"><img src={member.image} className=' mx-auto rounded-[50%] w-36 h-36'/></a>
                 <h4 className='text-[18px] text-black font-semibold'>{member.name}</h4>
-                <a href={member.linkedIn}><h5 className='font-bold text-[16px] text-blue-600 '>Linkedin</h5></a>
+                <a href={member.linkedIn}><h5 className='font-bold text-[16px] text-blue-600 '>LinkedIn</h5></a>
             </div>
   }
   return (

@@ -29,7 +29,7 @@ const index = (data) => {
               <div class="event-info">
                  <div class="info">
                      <h1>{data.name}</h1>
-                     <h3>{data.date}<sup>th</sup></h3>
+                     <h3>{data.date}</h3>
                      <h2>{data.time}</h2>
                  </div>
               </div>

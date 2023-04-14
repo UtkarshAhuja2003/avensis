@@ -19,14 +19,14 @@ const index = () => {
             <div class="stats">
                 <div class="numbers s1"><div id="Br"><br/><br/></div>
                     <div class="middle">
-                        <div className='flex justify-center'><p id="nbr">100</p><span>+</span></div>
-                        <h5>COMPETITIONS</h5>
+                        <div className='flex justify-center'><p id="nbr">30</p><span>+</span></div>
+                        <h5>SPEAKERS</h5>
                     </div>
                 </div>
                 <div class="numbers padleft s2"><div id="Br"><br/><br/></div>
                 <div class="middle">
-                    <div className='flex justify-center'><p id="nbr2">150</p><span>+</span></div>
-                    <h5>SPEAKERS</h5>
+                    <div className='flex justify-center'><p id="nbr2">100</p><span>+</span></div>
+                    <h5>COMPETITIONS</h5>
                 </div>
                 </div>
                 <div class="numbers s3"><div id="Br"><br/></div>
