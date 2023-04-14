@@ -22,17 +22,20 @@ const Navbar = () => {
   //   setUser(cookie.get("name",{ domain: ''}));
   // }
   useEffect(() => {
-    fetch('https://avensis-backend.msit.in/api/current_user')
-    .then(response => response.json())
-    .then(user => {
-      console.log('User info:', user);
-      const userName = user.name;
-      console.log('User name:', userName);
-      setUser(user.name);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+    fetch('https://avensis-backend.msit.in/api/current_user', {
+  credentials: 'include'
+      })
+      .then(response => response.json())
+      .then(user => {
+        console.log('User info:', user);
+        const userName = user.name;
+        console.log('User name:', userName);
+        setUser(user.name);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
   
   }, []);
   
