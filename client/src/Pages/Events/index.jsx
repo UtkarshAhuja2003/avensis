@@ -65,6 +65,26 @@ const Index = () => {
 
             <div class="eventS">
         <div class="event-theme">
+        {/* <img src={circle} class="circle1"/>
+        <img src={circle} class="circle2"/> */}
+          <span class="eventstitle">TECHNICAL</span>
+          <div class="event-boxes">
+            {
+                technical.map(event => (
+                    <EventCard
+                        catName = {event.catName}
+                        id = {event.id}
+                        name = {event.name}
+                        time = {event.time}
+                        image = {event.image}
+                        date = {event.date}
+                        desc = {event.desc}
+                    />
+                ))
+            }
+        </div>
+      </div>
+        <div class="event-theme">
             {/* <img src={circle} class="circle1"/>
             <img src={circle} class="circle2"/> */}
           <span class="eventstitle">ROBOTICS</span>
@@ -91,26 +111,6 @@ const Index = () => {
           <div class="event-boxes">
             {
                 literary.map(event => (
-                    <EventCard
-                        catName = {event.catName}
-                        id = {event.id}
-                        name = {event.name}
-                        time = {event.time}
-                        image = {event.image}
-                        date = {event.date}
-                        desc = {event.desc}
-                    />
-                ))
-            }
-        </div>
-      </div>
-      <div class="event-theme">
-            {/* <img src={circle} class="circle1"/>
-            <img src={circle} class="circle2"/> */}
-          <span class="eventstitle">TECHNICAL</span>
-          <div class="event-boxes">
-            {
-                technical.map(event => (
                     <EventCard
                         catName = {event.catName}
                         id = {event.id}
