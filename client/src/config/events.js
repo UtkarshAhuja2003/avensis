@@ -4,7 +4,7 @@ import robowar2 from '../Images/Events/Robotics/robowar2.jpeg'
 import robowar3 from '../Images/Events/Robotics/robowar3.jpeg'
 import robowar4 from '../Images/Events/Robotics/robowar4.jpeg'
 import robowar5 from '../Images/Events/Robotics/robowar5.jpeg'
-import robomaze from '../Images/Events/Robotics/robomaze.jpeg'
+import robomaze from '../Images/Events/Robotics/robomaze23.png'
 import robomaze1 from '../Images/Events/Robotics/robomaze2.png'
 import robomaze2 from '../Images/Events/Robotics/robomaze3.jpeg'
 import clue from '../Images/Events/fun_crev/clue.jpeg'
@@ -13,13 +13,11 @@ import bgmi from '../Images/Events/Gaming/bgmi.jpeg'
 import cod from '../Images/Events/Gaming/cod.jpeg'
 import stumble from '../Images/Events/Gaming/su,nle.jpeg'
 import valo from '../Images/Events/Gaming/valo.jpeg'
-// import conq from '../Images/Events/literary/conq.jpeg'
+import conq from '../Images/Events/literary/conq.jpeg'
 import physchs from '../Images/Events/literary/physchs.jpeg'
 import threads from '../Images/Events/literary/threads.jpeg'
-import image22 from "../Images/Events/Technical/Hackavenue/codeConquer.jpeg"
-// import image22 from '../Images/Events/Technical/codeConquer.jpeg'
+import image22 from '../Images/Events/Technical/Hackavenue/codeConquer.jpeg'
 import image23 from '../Images/Events/Technical/Hackavenue/wizard.png'
-
 
 export const Events = [
   {
@@ -477,92 +475,92 @@ export const Events = [
       } 
   ],
 },
-    {
-      id: 12,
-  name:"Robo_war",
-  catName:"robotics",
-  date: "APRIL 19th",
-  time: "1:30pm Onwards",
-  desc:"prize: ₹4000 , ₹2500 , ₹1500",
-  link:"https://forms.gle/fF9MAEarfxnX5v2H8",
-  tabs: [
-    {
-      name:"ABOUT",
-      image: robowar,
-      id:0,
-      content: " ROBOWAR is a combat competition. The only way to win the fight is that you have to pin down  or destroy the opponent robot. The fittest one will survive in this event. Robots may be equipped  with mechanical weapons such as blades, saws, cutters, claws etc.  "
-    },
-    {
-      name:"WINNING CRITERIA",
-      image: robowar,
-      id:1,
-      content: "<div className=''>1.	The competition will be played on a knock-out basis consisting of 2 players at a time.  <br/>2.	The maximum duration of each War/Fight will be 5 minutes.  <br/>3.	The robot will win if the robot pushes the opponent to the ditch successfully or  successfully immobilizes the opponent or out of the arena.  <br/>4.	Match will be interrupted if crossings of wire take place.  <br/>5.	No member will be allowed to enter the war zone without permission of coordinators.  <br/>6.	The organizers reserve the rights to change any or all of the above rules as they deem  fit.  <br/>7.	Violation of any of the above rules will lead to disqualification.  <br/></div>"
-                 
-    },
-    {
-      name:"SPECIFICATION",
-      image: robowar2,
-      id:2,
-      content: " <div className=''> <span className=' text-[#4A9FA0] font-bold '>ROBOT SPECIFICATION :  <br/> </span> 1.	Maximum permissible volume. Fully unfolded robot must be within the limits of 40 cm X  55 cm (l x b). There is no maximum height for a robot (dictated by the design and weight  constraints).  <br/>2.	Robots can have weapons such as cutters, flippers, saws, lifting devices, spinning  hammers etc. Use of liquid projectiles, any kind of inflammable liquid, flame-based  weapons, radio jamming devices, high power magnets or electromagnets, are not  permitted  <br/> 3.	Both AC and DC controlled voltage systems are allowed.  </div> "
-    },
-    {
-      name:"RULES",
-      image: robowar3,
-      id:3,
-      content: " <div className='text-2xl'>	1.	Each team can have a maximum of four members. Students from different institutes can form  a team .  <br/>2.	Robots will be inspected for safety and reliability before being allowed to compete.  <br/>3.	Disrupting an opponent's power is not allowed.   <br/></div>"
-    },
-    {
-      name:"VENUE",
-      image: robowar4,
-      id:4,
-      content: "  <span className=' text-[#4A9FA0] font-bold '> SEMINAR HALL 4TH FLOOR  </span>   "
-    },
-
-   
-  ],
-},
-
-
-
 {
-  id: 13,
-name:"Robo_maze",
-date: "APRIL 19th ",
-  time: "10:30pm Onwards",
+  id: 12,
+name:"Robo_war",
 catName:"robotics",
-desc:"prize: ₹2000 , ₹1200 , ₹800",
-link:"https://forms.gle/wpzQ4XNEYC7nZaFD9",
+date: "APRIL 19th",
+time: "1:30pm Onwards",
+desc:"PRIZES: ₹6000, ₹4000, ₹3000",
+link:"https://forms.gle/fF9MAEarfxnX5v2H8",
 tabs: [
 {
   name:"ABOUT",
-  image: robomaze,
+  image: robowar,
   id:0,
-  content: "Robo Maze game is to challenge participants to develop their programming and robotics skills by designing a robot that can successfully navigate through a complex maze, using sensors and advanced algorithms to make quick decisions and reach the end point within the shortest possible time.  "
+  content: " ROBOWAR is a combat competition. The only way to win the fight is that you have to pin down  or destroy the opponent robot. The fittest one will survive in this event. Robots may be equipped  with mechanical weapons such as blades, saws, cutters, claws etc.  "
 },
 {
   name:"WINNING CRITERIA",
-  image: robomaze,
+  image: robowar,
   id:1,
-  content: "<div className=''>1.	The victory criteria for a robot maze game involve successfully navigating the robot through the maze to a specific endpoint or goal. <br/>2.	The robot must complete the maze within a certain amount of time while following any specified rules, such as staying within the bounds of the maze or avoiding certain obstacles. <br/>3.	The robot that successfully completes the maze within the designated time limit while meeting all criteria will be declared the winner. <br/></div>"
+  content: "<div className=''>1.	The competition will be played on a knock-out basis consisting of 2 players at a time.  <br/>2.	The maximum duration of each War/Fight will be 10 minutes.  <br/>3.	The robot will win if the robot pushes the opponent to the ditch successfully or  successfully immobilizes the opponent or out of the arena.  <br/>4.	Match will be interrupted if crossings of wire take place.  <br/>5.	No member will be allowed to enter the war zone without permission of coordinators.  <br/>6.	The organizers reserve the rights to change any or all of the above rules as they deem  fit.  <br/>7.	Violation of any of the above rules will lead to disqualification.  <br/></div>"
              
 },
 {
   name:"SPECIFICATION",
-  image: robomaze,
+  image: robowar2,
   id:2,
-  content: " <div className=''> <span className=' text-[#4A9FA0] font-bold '>ROBOT SPECIFICATION : </span> <br/>  1.	The maze will have dead-ends and false paths, creating additional challenges for the robot to navigate through. <br/>2.	The maze will have only one entry and exit point, providing a clear objective for the robot to work towards. <br/>3.	The maze will be visually appealing and include clear markings to help the robot identify the path and navigate through the maze. <br/>4.	The maze will be designed with precision and accuracy, ensuring that the robot relies solely on its sensors and programming to navigate through the maze. <br/></div> "
+  content: " <div className=''> <span className=' text-[#4A9FA0] font-bold '>ROBOT SPECIFICATION :  <br/> </span> 1.	Maximum permissible volume. Fully unfolded robot must be within the limits of 40 cm X  55 cm (l x b). There is no maximum height for a robot (dictated by the design and weight  constraints).  <br/>2.	Robots can have weapons such as cutters, flippers, saws, lifting devices, spinning  hammers etc. Use of liquid projectiles, any kind of inflammable liquid, flame-based  weapons, radio jamming devices, high power magnets or electromagnets, are not  permitted  <br/> 3.	Both AC and DC controlled voltage systems are allowed.  </div> "
 },
 {
   name:"RULES",
-  image: robomaze,
+  image: robowar3,
   id:3,
-  content: " <div className='text-2xl'>1.	Contesting machines must be submitted to the organizers at the time of registration. <br/>2.	The micromouse handler is given time to adjust and calibrate the sensors after the maze is unveiled. <br/>3.	No selection of strategies or capturing of maze configuration is allowed. Violation of this rule will lead to instant disqualification. <br/> 4.	Each micromouse is allocated a total of 7 minutes of access to the maze after the 3minute sensor adjustment time. <br/>5.	Manual assistance to the micromouse during the contest is considered a disqualification. <br/>6.	Scoring is based on three parameters: run time, maze time, and the number of times the micromouse is touched. </div>"
+  content: " <div className='text-2xl'>	1.	Each team can have a maximum of four members. Students from different institutes can form  a team .  <br/>2.	Robots will be inspected for safety and reliability before being allowed to compete.  <br/>3.	Disrupting an opponent's power is not allowed.   <br/></div>"
 },
 {
   name:"VENUE",
-  image: robomaze,
+  image: robowar4,
   id:4,
-  content: "<span className=' text-[#4A9FA0] font-bold '> SEMINAR HALL 4TH FLOOR  </span>   "
+  content: "  <span className=' text-[#4A9FA0] font-bold '> MSIT BADMMINTON COURT.  </span>   "
+},
+
+
+],
+},
+
+
+
+{
+id: 13,
+name:"Line following Robo Maze",
+date: "APRIL 19th ",
+time: "10:30pm Onwards",
+catName:"robotics",
+desc:"PRIZES: ₹3000, ₹2000, ₹1000",
+link:"https://forms.gle/wpzQ4XNEYC7nZaFD9",
+tabs: [
+{
+name:"ABOUT",
+image: robomaze,
+id:0,
+content: "Line Following Robo Maze game is to challenge participants to develop their programming and robotics skills by designing a robot that can successfully navigate through a complex maze, using sensors and advanced algorithms to make quick decisions and reach the end point within the shortest possible time."
+},
+{
+name:"WINNING CRITERIA",
+image: robomaze,
+id:1,
+content: "<div className=''>1.	The victory criteria for a robot maze game involve successfully navigating the robot through the maze to a specific endpoint or goal. <br/>2.	The robot must complete the maze within a certain amount of time while following any specified rules, such as staying within the bounds of the maze or avoiding certain obstacles. <br/>3.	The robot that successfully completes the maze within the designated time limit while meeting all criteria will be declared the winner. <br/></div>"
+         
+},
+{
+name:"SPECIFICATION",
+image: robomaze,
+id:2,
+content: " <div className=''> <span className=' text-[#4A9FA0] font-bold '>MAZE SPECIFICATION : </span> <br/>  1.	The maze will have dead-ends and false paths, creating additional challenges for the robot to navigate through. <br/>2.	The maze will have only one entry and exit point, providing a clear objective for the robot to work towards. <br/>3.	The maze will be visually appealing and include clear markings to help the robot identify the path and navigate through the maze. <br/>4.	The maze will be designed with precision and accuracy, ensuring that the robot relies solely on its sensors and programming to navigate through the maze. <br/></div> "
+},
+{
+name:"RULES",
+image: robomaze,
+id:3,
+content: " <div className='text-2xl'>1.	Contesting machines must be submitted to the organizers at the time of registration. <br/>2.	The micromouse handler is given time to adjust and calibrate the sensors after the maze is unveiled. <br/>3.	No selection of strategies or capturing of maze configuration is allowed. Violation of this rule will lead to instant disqualification. <br/> 4.	Each micromouse is allocated a total of 7 minutes of access to the maze after the 3minute sensor adjustment time. <br/>5.	Manual assistance to the micromouse during the contest is considered a disqualification. <br/>6.	Scoring is based on three parameters: run time, maze time, and the number of times the micromouse is derailed from track. </div>"
+},
+{
+name:"VENUE",
+image: robomaze,
+id:4,
+content: "<span className=' text-[#4A9FA0] font-bold '> SEMINAR HALL 4TH FLOOR.  </span>   "
 },
 
 

@@ -35,7 +35,7 @@ const Footer = () => {
       image : utkarsh,
     },
     {
-      name: "Uday Sangwan",
+      name: "Uday Sanghwan",
       linkedIn:"https://linktr.ee/uday_sangwan",
       image : uday,
     },
@@ -51,12 +51,12 @@ const Footer = () => {
     },
     {
       name: "Anshita Chaudhary",
-      linkedIn:"https://www.linkedin.com/in/kratika-suri-429229228",
+      linkedIn:"https://www.linkedin.com/in/anshita-chaudhary-7b0272253",
       image : anshita,
     },
     {
       name: "Ankit Chaudhary",
-      linkedIn:"https://www.linkedin.com/in/anshita-chaudhary-7b0272253",
+      linkedIn:"https://www.linkedin.com/in/kratika-suri-429229228",
       image : chutia,
     },
     {
@@ -74,7 +74,7 @@ const Footer = () => {
     return <div class="mx-[15px] w-[160px]">
                 <a href={member.linkedIn} target="_blank"><img src={member.image} className=' mx-auto rounded-[50%] w-36 h-36'/></a>
                 <h4 className='text-[18px] text-black font-semibold'>{member.name}</h4>
-                <a href={member.linkedIn}><h5 className='font-bold text-[16px] text-blue-600 '>LinkedIn</h5></a>
+                <a href={member.linkedIn}><h5 className='font-bold text-[16px] text-blue-600 '>Linkedin</h5></a>
             </div>
   }
   return (
@@ -93,8 +93,8 @@ const Footer = () => {
                 <span>+91 83768 93416</span>  
                 </div>
                 <div>
-                  <span class="contactname">Shlok Rana</span><span class="contactcoma"><br/> </span><span>Chief Organizer </span><br/>
-                  <span>+91 96435 66916</span> 
+                  <a href='https://sites.google.com/view/shloksportfolio' ><span class="contactname">Shlok Rana</span><span class="contactcoma"><br/> </span><span>Chief Organizer </span><br/>
+                  <span>+91 96435 66916</span></a>
                 </div>
             </div>
         </div>
