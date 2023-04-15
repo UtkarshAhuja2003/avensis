@@ -108,7 +108,7 @@ const Navbar = () => {
             className="ml-4 font-medium font-dm tracking-wider bg-theme text-[14px] leading-8 text-[#F9F7F7] hover:text-theme border-gradient-to-r from-cyan-500 to-blue-500  border-2 px-5 py-1 rounded-[20px] hover:bg-[#F9F7F7]
     duration-500"
           >
-           {user}
+           {user!=""?user:"REGISTER"}
 
           </button>
           </li>
