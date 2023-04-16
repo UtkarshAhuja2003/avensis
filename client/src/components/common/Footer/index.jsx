@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import image from "../../../Images/footer-back.png"
 import tanay from '../../../Images/team/Tanay.png'
 import utkarsh from '../../../Images/team/utkarsh.png'
-import uday from '../../../Images/team/uday.jpeg'
+import uday from '../../../Images/team/uday.jpg'
 import kaif from '../../../Images/team/kaif.jpeg'
 import yash from '../../../Images/team/yash.jpeg'
 import chutia from '../../../Images/team/chutia.jpg'
@@ -35,7 +35,7 @@ const Footer = () => {
       image : utkarsh,
     },
     {
-      name: "Uday Sanghwan",
+      name: "Uday Sangwan",
       linkedIn:"https://linktr.ee/uday_sangwan",
       image : uday,
     },
