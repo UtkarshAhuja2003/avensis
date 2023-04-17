@@ -56,7 +56,7 @@ const Footer = () => {
     },
     {
       name: "Ankit Chaudhary",
-      linkedIn:"https://www.linkedin.com/in/kratika-suri-429229228",
+      linkedIn:"https://www.linkedin.com/in/ankit-chaudhary-01a534228/",
       image : chutia,
     },
     {
