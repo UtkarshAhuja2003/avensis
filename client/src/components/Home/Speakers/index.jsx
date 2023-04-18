@@ -3,10 +3,9 @@ import SpeakerCard from './SpeakerCard'
 import SponsorCard from './SponsorCard'
 import image from '../../../Images/speech.png'
 import Sphere1 from '../../../Images/Sphere-Black-Matte1(1).png' 
-import DecorativeLine from '../../../Images/DecorativeLine.png'
-import image2 from '../../../Images/Workshops/workshop1.png'
 import image3 from '../../../Images/companylogo.png'
 import shape3 from '../../../Images/shape3.png'
+import intrainz from '../../../Images/Sponsors/Intrainz.png'
 import { Events } from '../../../config/events.js'
 
 const index = () => {
@@ -33,45 +32,9 @@ const index = () => {
 
     const sponsors = [
         {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        },
-        {
-            "name": "COMING SOON",
-            "image": image3
-        }    
+            "name": "Education Partner",
+            "image": intrainz
+        }
     ];
 
 
@@ -82,7 +45,6 @@ const index = () => {
         <img src={shape3} class="funshape"></img>
         <div className='md:mx-[10%]'>
         <div className='w-full mb-24'>
-            <p className='text-white font-[ultra] text-4xl tracking-widest ml-4'> SPONSORS</p>
             <div className='flex flex-wrap justify-around'>
             {
                 sponsors.map(sponsor => (
